@@ -1,0 +1,10 @@
+.Text {
+  font-size: em(16px);
+  line-height: 120%;
+  font-weight: 400;
+  color: $white;
+
+  @include ifmobile {
+    font-size: em(12px);
+  }
+}

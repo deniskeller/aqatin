@@ -1,0 +1,39 @@
+.Li {
+  list-style: none;
+  min-width: em(60px);
+  padding: 0 em(12px);
+}
+
+.Link {
+  font-size: em(18px);
+  color: $black;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: em(-3px);
+    left: 0;
+    height: 2px;
+    background: $blue;
+  }
+}
+
+.Link:hover {
+  color: $blue;
+  &::after {
+    animation: bottomLine 0.3s linear forwards;
+  }
+}
+.Active {
+  color: $blue;
+}
+
+@keyframes bottomLine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
