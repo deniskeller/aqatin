@@ -7,9 +7,8 @@
   @extend %button;
 
   .Title {
-    font-size: em(12px);
-
-    font-family: $font-Arial;
+    font-size: em(14px);
+    font-family: 'Montserrat';
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -29,19 +28,17 @@
 
 //default
 .Button_default {
-  color: $white;
-  background: $blue;
-  box-shadow: 0 em(2px) em(16px) rgba(15, 103, 240, 0.5);
+  color: $black;
+  background: $yellow-bg;
   transition: box-shadow $speed;
 
   &:hover {
-    background: darken($blue, 10%);
-    box-shadow: 0 em(4px) em(18px) rgba(15, 103, 240, 1);
+    background: rgba(225, 246, 101, 0.75);
   }
 
   &:active {
-    background: darken($blue, 20%);
-    box-shadow: none;
+    background: $yellow-bg;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -83,21 +80,15 @@
 
 //link
 .Button_link {
-  color: $blue;
+  color: $black;
   padding: 0;
   min-width: auto;
   height: 100%;
   border-color: transparent;
   background: 0 0;
   box-shadow: none;
-  .Title {
-    text-transform: inherit;
-  }
   &:hover {
-    color: darken($blue, 10%);
-  }
-  &:active {
-    color: darken($blue, 20%);
+    color: $grey-link;
   }
 }
 

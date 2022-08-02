@@ -1,47 +1,34 @@
 .Container {
   width: 100%;
-  box-shadow: 0 2px 8px #f0f1f2;
-  position: relative;
+  position: absolute;
   z-index: 1000;
 
   .Navbar {
     width: 100%;
-    max-width: em(1180px);
+    max-width: em(1066px);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: $header-height;
-
-    .NavbarLogo {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      .LogoImage {
-        width: em(40px);
-        height: em(40px);
-      }
-
-      .LogoTitle {
-        font-size: em(12px);
-        color: $black;
-        font-weight: 700;
-        line-height: 100%;
-        margin-left: em(10px);
-      }
-    }
+    border-bottom: 0.5px solid $black;
+    padding: em(21px) em(20px) em(11px);
 
     .NavbarNav {
       display: flex;
       flex-direction: row;
       align-items: center;
     }
-  }
 
-  .MaxWidth {
-    max-width: 100%;
-    padding: 0 em(30px);
+    .NavbarAuth {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .Btn_Login {
+        margin-left: em(20px);
+        height: em(44px);
+      }
+    }
   }
 }

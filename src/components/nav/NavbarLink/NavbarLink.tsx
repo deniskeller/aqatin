@@ -6,7 +6,7 @@ import styles from './NavbarLink.module.scss';
 interface Props {
   href: string;
   title: string;
-  index: number;
+  index?: number;
 }
 
 const NavbarLink: React.FC<Props> = ({ href, title, index }) => {

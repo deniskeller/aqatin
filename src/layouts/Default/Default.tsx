@@ -10,11 +10,11 @@ interface Props {
 
 const Default: React.FC<Props> = ({ children }) => {
   return (
-    <div className={styles.content}>
+    <>
       <Navbar />
-      {children}
+      <div className={styles.Content}>{children}</div>
       {/* <Footer /> */}
-    </div>
+    </>
   );
 };
 

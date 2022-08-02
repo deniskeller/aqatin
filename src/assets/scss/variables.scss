@@ -1,18 +1,23 @@
-$black: #101010;
-$yellow: #e2f063;
-$green: #13de4c;
-$grey: #777777;
+$black: #000000;
+$black-bg: #1f1f1f;
+$green: #1b692c;
+$green-bg: #155823;
+$yellow: #e8e268;
+$yellow-bg: #e1f665;
+$yellow-text-footer: rgba(225, 246, 101, 0.5);
+$grey: #948f8f;
+$grey-link: rgba(0, 0, 0, 0.5);
 $white: #ffffff;
-$blue: #1890ff;
-$red: #ff4d4f;
 $placeholder: rgba(0, 0, 0, 0.39);
 $input: #f2f5f6;
 
-$speed: 0.5s;
+$blue: #1890ff;
+$red: #ff4d4f;
 
-$navbar-width: 300px;
-$navbar-height: 100px;
-$header-height: 60px;
+$speed: 0.3s;
+
+$navbar-height: 76px;
+$top-padding: calc($navbar-height + 105px);
 
 $font-Arial: 'Arial-Black', sans-serif;
 $font-Calibri: 'Calibri-Regular', sans-serif;

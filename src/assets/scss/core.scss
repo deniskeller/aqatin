@@ -9,19 +9,19 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (max-aspect-ratio: 1440/720) {
+@media screen and (max-aspect-ratio: 1280/720) {
   html {
-    font-size: math.div(16, 1440) * 100vw;
+    font-size: math.div(16, 1280) * 100vw;
   }
 }
 
-@media only screen and (min-width: 1440px) and (max-aspect-ratio: 1440/720) {
+@media only screen and (min-width: 1280px) and (max-aspect-ratio: 1280/720) {
   html {
     font-size: 16px;
   }
 }
 
-@media only screen and (min-height: 720px) and (min-aspect-ratio: 1440/720) {
+@media only screen and (min-height: 720px) and (min-aspect-ratio: 1280/720) {
   html {
     font-size: 16px;
   }
@@ -33,7 +33,7 @@ html {
   // }
 
   @include ifmobile {
-    font-size: math.div(16, 375) * 100vw;
+    font-size: math.div(16, 360) * 100vw;
   }
 }
 
@@ -58,7 +58,7 @@ textarea {
 }
 
 textarea::placeholder {
-  line-height: 120%;
+  line-height: 100%;
 }
 
 .overflow-hidden {
