@@ -1,6 +1,6 @@
 .BaseContainer {
   width: 100%;
+  max-width: em(1027px);
+  margin: 0 auto;
   position: relative;
-  padding: em(20px);
-  border: 1px solid rgba(0, 0, 0, 0.06);
 }
