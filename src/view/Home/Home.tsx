@@ -1,10 +1,24 @@
-import { HomeFirstBlock } from 'components/pages';
+import {
+  AboutProfile,
+  Benefits,
+  ChooseProfile,
+  Company,
+  GoodFor,
+  Header,
+  OurServices,
+} from 'components/pages';
 import React from 'react';
 
 const Home = () => {
   return (
     <>
-      <HomeFirstBlock />
+      <Header />
+      <OurServices />
+      <Benefits />
+      <Company />
+      <GoodFor />
+      <ChooseProfile />
+      <AboutProfile />
     </>
   );
 };

@@ -1,0 +1,30 @@
+.Wrapper {
+  background: $black-bg;
+
+  .Company {
+    padding-top: em(94px);
+    padding-bottom: em(90px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &_Aboutinfo {
+      padding-top: em(80px);
+      .Title {
+        margin-bottom: em(35px);
+      }
+
+      .Description {
+        max-width: em(484px);
+      }
+    }
+
+    &_Image {
+      position: relative;
+      right: em(-60px);
+      width: em(477px);
+      height: em(600px);
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import '../styles/globals.scss';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
+import 'animate.css/animate.min.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

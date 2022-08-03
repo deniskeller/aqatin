@@ -3,14 +3,14 @@
   font-style: normal;
   font-weight: 900;
   line-height: 120%;
-  color: $black;
   text-transform: uppercase;
 
   &_h1 {
     font-size: em(50px);
   }
   &_h2 {
-    font-size: em(26px);
+    font-size: em(25px);
+    line-height: 152.5%;
   }
   &_h3 {
     font-size: em(22px);

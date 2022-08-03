@@ -1,0 +1,31 @@
+.Wrapper {
+  background: $green-bg;
+}
+
+.ChooseProfile {
+  padding-top: em(320px);
+  padding-bottom: em(100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .Title {
+    text-align: center;
+    max-width: em(708px);
+    margin-bottom: em(53px);
+  }
+
+  .IconArrow {
+    width: em(112px);
+    height: em(42px);
+    margin-bottom: em(77px);
+    --animate-delay: 1s;
+  }
+
+  .IconStar {
+    width: em(52.86px);
+    height: em(60.22px);
+    transform: rotate(40.3deg);
+    --animate-delay: 5s;
+  }
+}

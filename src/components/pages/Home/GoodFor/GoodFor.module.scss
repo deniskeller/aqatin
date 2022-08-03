@@ -1,0 +1,57 @@
+.Wrapper {
+  background: $white;
+}
+.GoodFor {
+  padding-top: em(183px);
+  padding-bottom: em(122px);
+
+  .Description {
+    max-width: em(964px);
+    margin-bottom: em(42px);
+  }
+
+  .Title {
+    margin-bottom: em(55px);
+  }
+
+  .Stickers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .Sticker {
+      transition: all 0.3s ease-in;
+    }
+  }
+
+  .Stickers1 {
+    max-width: em(727px);
+    position: relative;
+    left: em(68px);
+    margin-bottom: em(32px);
+    .Sticker1:hover {
+      transform: rotate(5deg);
+    }
+    .Sticker2:hover {
+      transform: rotate(-5deg);
+    }
+    .Sticker3:hover {
+      transform: rotate(5deg);
+    }
+  }
+
+  .Stickers2 {
+    max-width: em(727px);
+    position: relative;
+    left: em(218px);
+    .Sticker1:hover {
+      transform: rotate(5deg);
+    }
+    .Sticker2:hover {
+      transform: rotate(-5deg);
+    }
+    .Sticker3:hover {
+      transform: rotate(5deg);
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.Wrapper {
+  background: $green-bg;
+}
+
+.Benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: em(283px);
+  padding-bottom: em(240px);
+
+  &_Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    --animate-delay: 0.2s;
+
+    .Number {
+      margin-bottom: em(33px);
+      span {
+        font-size: em(100px);
+        line-height: 100%;
+        font-family: $font-Gobold;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $yellow-bg;
+      }
+    }
+
+    .Description {
+      // max-width: em(170px);
+      width: max-content;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: em(15px);
+        font-family: $font-Arial;
+        font-style: normal;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $yellow-bg;
+        text-align: center;
+      }
+    }
+  }
+
+  &_Item3 {
+    --animate-delay: 0.9s;
+  }
+}

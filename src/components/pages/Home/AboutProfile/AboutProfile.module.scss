@@ -1,0 +1,65 @@
+.Wrapper {
+  background: $white;
+  position: relative;
+}
+
+.AboutProfile {
+  padding-top: em(80px);
+  padding-bottom: em(55px);
+
+  &_Items {
+    .Item {
+      position: relative;
+      margin-bottom: em(60px);
+      &:last-child {
+        margin-bottom: 0;
+        left: em(280px);
+        .Item_Description {
+          max-width: em(300px);
+        }
+      }
+      &_Number {
+        margin-bottom: em(10px);
+        span {
+          font-family: 'Gobold Hollow';
+          font-style: normal;
+          font-weight: 400;
+          font-size: em(100px);
+          line-height: 100%;
+          text-transform: uppercase;
+          color: $green;
+        }
+      }
+
+      &_Name {
+        margin-bottom: em(5px);
+      }
+
+      &_Description {
+        max-width: em(395px);
+      }
+    }
+  }
+
+  &_Description {
+    display: flex;
+    width: em(694.32px);
+    min-height: em(180px);
+    padding: em(30px) em(157px) em(10px) em(63px);
+    position: absolute;
+    top: em(240px);
+    right: em(-100px);
+    background: $yellow-bg;
+    border-radius: em(10px);
+    transform: rotate(4.51deg);
+    p {
+      font-family: $font-Flood;
+      font-style: italic;
+      font-weight: 400;
+      font-size: em(33px);
+      line-height: 152.5%;
+      text-transform: uppercase;
+      color: $green;
+    }
+  }
+}

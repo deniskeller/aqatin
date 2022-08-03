@@ -1,0 +1,161 @@
+.Padding_Top {
+  padding-top: em($top-padding);
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &_Logo {
+    width: em(209px);
+    height: em(56px);
+    padding-top: em(10px);
+  }
+
+  &_Title {
+    width: 100%;
+    max-width: em(745px);
+    margin-bottom: em(10px);
+    span {
+      color: $green;
+    }
+  }
+}
+
+.Subtitle {
+  padding-left: em(284px);
+  margin-bottom: em(100px);
+  animation: fadeIn;
+  --animate-delay: 9s;
+  h2 {
+    font-size: em(25px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+  }
+}
+
+.Content {
+  position: relative;
+  padding-left: em(284px);
+  margin-bottom: em(37px);
+  &_Logo_Icon {
+    width: em(32.46px);
+    height: em(36.83px);
+    position: absolute;
+    left: em(-5px);
+    top: em(-40px);
+  }
+
+  &_Logo_Text {
+    position: absolute;
+    left: em(31px);
+    top: em(-31px);
+    transform: rotate(-7.77deg);
+    p {
+      font-size: em(30px);
+      font-family: $font-Flood;
+      font-style: italic;
+      font-weight: 400;
+      color: $green;
+    }
+  }
+
+  &_Description {
+    width: 100%;
+    max-width: em(563px);
+    margin-bottom: em(15px);
+    p {
+      font-size: em(16px);
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  &_Form {
+    width: 100%;
+    max-width: em(563px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_Input {
+      width: 100%;
+      max-width: em(401px);
+      span {
+        height: em(61px);
+      }
+    }
+    &_Button {
+      width: em(143px);
+      height: em(62px);
+    }
+  }
+}
+
+.Partners {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: em(1066px);
+  margin: 0 auto;
+  padding-left: em(57px);
+  padding-bottom: em(18px);
+  margin-bottom: em(127px);
+  border-bottom: 0.5px solid #000000;
+
+  &_Title {
+    max-width: em(190px);
+    margin-right: em(60px);
+    p {
+      font-size: em(11px);
+      line-height: 152.5%;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      color: $black;
+    }
+  }
+
+  &_Items {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    .Item {
+      position: relative;
+    }
+
+    .Companies_house {
+      width: em(85px);
+      height: em(58px);
+      margin-right: em(17px);
+    }
+
+    .Revenue_and_customs {
+      width: em(100px);
+      height: em(59px);
+      margin-right: em(17px);
+    }
+
+    .Fca {
+      width: em(91px);
+      height: em(30px);
+      margin-right: em(10px);
+    }
+
+    .Bank_of_ireland {
+      width: em(103px);
+      height: em(25px);
+      margin-right: em(17px);
+    }
+
+    .Canada {
+      width: em(88.02px);
+      height: em(20.98px);
+    }
+  }
+}

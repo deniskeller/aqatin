@@ -3,14 +3,18 @@ import styles from './BaseText.module.scss';
 
 interface Props {
   children: ReactNode;
-  style?: object;
   className?: string;
+  color?: string;
 }
 
-const BaseText: React.FC<Props> = ({ children, style, className }) => {
+const BaseText: React.FC<Props> = ({
+  children,
+  className = '',
+  color = '#000000',
+}) => {
   return (
     <span className={className}>
-      <p style={{ ...style }} className={`${styles.Text}`}>
+      <p style={{ color: color }} className={`${styles.Text}`}>
         {children}
       </p>
     </span>

@@ -5,17 +5,22 @@ interface Props {
   children: ReactNode;
   type?: string;
   className?: string;
+  color?: string;
 }
 
 const BaseTitle: React.FC<Props> = ({
   children,
   type = 'h1',
   className = '',
+  color = '#000000',
 }) => {
   if (type == 'h1') {
     return (
       <div className={`${className}`}>
-        <h1 className={`${styles.Title} ${styles['Title_' + type]}`}>
+        <h1
+          className={`${styles.Title} ${styles['Title_' + type]}`}
+          style={{ color: color }}
+        >
           {children}
         </h1>
       </div>
@@ -23,7 +28,10 @@ const BaseTitle: React.FC<Props> = ({
   } else if (type == 'h2') {
     return (
       <div className={`${className}`}>
-        <h2 className={`${styles.Title} ${styles['Title_' + type]}`}>
+        <h2
+          className={`${styles.Title} ${styles['Title_' + type]}`}
+          style={{ color: color }}
+        >
           {children}
         </h2>
       </div>
@@ -31,7 +39,10 @@ const BaseTitle: React.FC<Props> = ({
   } else if (type == 'h3') {
     return (
       <div className={`${className}`}>
-        <h3 className={`${styles.Title} ${styles['Title_' + type]}`}>
+        <h3
+          className={`${styles.Title} ${styles['Title_' + type]}`}
+          style={{ color: color }}
+        >
           {children}
         </h3>
       </div>

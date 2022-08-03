@@ -1,0 +1,57 @@
+.OurServices {
+  position: relative;
+  padding-bottom: em(95px);
+
+  .Icon {
+    width: em(116.54px);
+    height: em(112.89px);
+    position: absolute;
+    right: em(-15px);
+    bottom: em(32px);
+  }
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: em(50px);
+
+  .Title {
+    max-width: em(150px);
+    margin-right: em(140px);
+  }
+
+  .Description {
+    max-width: em(670px);
+  }
+}
+
+.Stickers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: em(35px) em(28px);
+  max-width: em(776px);
+  margin-left: em(187px);
+
+  .Sticker {
+    transition: all 0.3s ease-in;
+  }
+
+  .Sticker1:hover {
+    transform: rotate(5deg);
+  }
+  .Sticker2:hover {
+    transform: rotate(-5deg);
+  }
+  .Sticker3:hover {
+    transform: rotate(5deg);
+  }
+  .Sticker4:hover {
+    transform: rotate(-5deg);
+  }
+  .Sticker5:hover {
+    transform: rotate(5deg);
+  }
+}
