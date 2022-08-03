@@ -1,5 +1,7 @@
 @import './../src/assets/scss/core.scss';
 
 :root {
-  --animate-delay: 0.5s;
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
 }
