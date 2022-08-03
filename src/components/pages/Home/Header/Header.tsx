@@ -1,4 +1,3 @@
-//@ts-nocheck
 import {
   BaseButton,
   BaseContainer,
@@ -10,7 +9,6 @@ import { ALL_ICONS } from '@constants/icons';
 import Image from 'next/image';
 import React from 'react';
 import styles from './Header.module.scss';
-import { Animated } from 'react-animated-css';
 
 const Header = () => {
   const [value, setValue] = React.useState<string>('');
@@ -19,11 +17,7 @@ const Header = () => {
       <BaseContainer>
         <div className={styles.Padding_Top}></div>
 
-        <Animated
-          animationIn="fadeIn"
-          animationInDuration={1000}
-          isVisible={true}
-        >
+        <div className="animate__animated animate__fadeIn animate__delay">
           <div className={styles.Header}>
             <div className={styles.Header_Logo}>
               <BaseIcon
@@ -39,49 +33,28 @@ const Header = () => {
               </BaseTitle>
             </div>
           </div>
-        </Animated>
+        </div>
 
-        {/* <Animated
-          animationIn="fadeInRight"
-          isVisible={true}
-          animationInDelay={200}
-        > */}
         <div className="animate__animated animate__fadeInRightBig animate__delay-1s">
           <div className={styles.Subtitle}>
             <h2>Create an account and control your finances</h2>
           </div>
         </div>
-        {/* </Animated> */}
 
         <div className={styles.Content}>
-          {/* <Animated
-            animationIn="fadeIn"
-            animationInDelay={5000}
-            isVisible={true}
-          > */}
-          <div className="animate__animated animate__fadeIn animate__delay-3s">
+          <div className="animate__animated animate__fadeIn animate__delay-5s">
             <div className={styles.Content_Logo_Icon}>
               <BaseIcon viewBox="0 0 118 114" icon={ALL_ICONS.STAR} />
             </div>
           </div>
 
-          {/* </Animated> */}
-
-          <Animated
-            animationIn="fadeIn"
-            animationInDelay={15000}
-            isVisible={true}
-          >
+          <div className="animate__animated animate__fadeIn animate__delay-5s">
             <div className={styles.Content_Logo_Text}>
               <p>Pre-register now</p>
             </div>
-          </Animated>
+          </div>
 
-          <Animated
-            animationIn="fadeIn"
-            animationInDelay={25000}
-            isVisible={true}
-          >
+          <div className="animate__animated animate__fadeIn animate__delay-3s Header_Content_Description">
             <div className={styles.Content_Description}>
               <p>
                 Enter your email and you will be the first who will get all the
@@ -99,20 +72,15 @@ const Header = () => {
                 className={styles.Content_Form_Input}
               />
               <BaseButton
-                title="Let’s go!"
+                title="Let`s go!"
                 className={styles.Content_Form_Button}
               />
             </div>
-          </Animated>
+          </div>
         </div>
       </BaseContainer>
 
-      <Animated
-        animationIn="fadeIn"
-        animationInDelay={400}
-        isVisible={true}
-        animationInDuration={3000}
-      >
+      <div className="animate__animated animate__fadeIn animate__delay-4s Header_Partners">
         <div className={styles.Partners}>
           <div className={styles.Partners_Title}>
             <p>Registered & Operating at the UK, Ireland and Canada</p>
@@ -155,7 +123,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </Animated>
+      </div>
     </>
   );
 };

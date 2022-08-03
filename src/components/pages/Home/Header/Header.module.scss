@@ -7,18 +7,6 @@
   flex-direction: row;
   justify-content: space-between;
 
-  animation: fadeIn;
-  -webkit-animation-delay: 9s;
-  animation-delay: 9s;
-  -webkit-animation-delay: 9s;
-  animation-delay: 9s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-duration: var(--animate-duration);
-  animation-duration: var(--animate-duration);
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-
   &_Logo {
     width: em(209px);
     height: em(56px);
@@ -38,18 +26,6 @@
 .Subtitle {
   padding-left: em(284px);
   margin-bottom: em(100px);
-
-  animation: fadeIn;
-  -webkit-animation-delay: 9s;
-  animation-delay: 9s;
-  -webkit-animation-delay: 9s;
-  animation-delay: 9s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-duration: var(--animate-duration);
-  animation-duration: var(--animate-duration);
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
 
   h2 {
     font-size: em(25px);

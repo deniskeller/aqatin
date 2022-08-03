@@ -1,7 +1,10 @@
 @import './../src/assets/scss/core.scss';
 
 :root {
-  --animate-duration: 1s;
-  --animate-delay: 1s;
-  --animate-repeat: 1;
+  --animate-delay: 0.2s !important;
+}
+
+.Header_Content_Description,
+.Header_Partners {
+  --animate-delay: 0.5s !important;
 }
