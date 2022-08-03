@@ -13,6 +13,14 @@
     text-align: center;
     max-width: em(708px);
     margin-bottom: em(53px);
+
+    p {
+      font-size: em(25px);
+      font-weight: 900;
+      line-height: 152.5%;
+      text-transform: uppercase;
+      color: $yellow;
+    }
   }
 
   .IconArrow {

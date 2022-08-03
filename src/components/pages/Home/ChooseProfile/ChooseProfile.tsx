@@ -1,4 +1,4 @@
-import { BaseContainer, BaseIcon, BaseText } from '@base/index';
+import { BaseContainer, BaseIcon } from '@base/index';
 import { ALL_ICONS } from '@constants/icons';
 import React from 'react';
 import styles from './ChooseProfile.module.scss';
@@ -6,26 +6,18 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const ChooseProfile = () => {
   const str = 'AT THE AQATIN PLATFORM YOU CAN CHOOSE THE PROFILE TO WORK WITH:';
-
-  const [value, setValue] = React.useState(str);
-
-  const refText = React.useRef(null);
-  let int = 1;
-
-  const computedTicker = (str: string) => {
-    setValue(str.slice(0, int));
-    int++;
-
-    if (int > str.length) {
-      int = 1;
-    }
-
-    setTimeout(computedTicker, 1000);
-  };
+  const delay = 20;
+  const [text, setText] = React.useState<string>('');
+  const [click, setClick] = React.useState(false);
 
   React.useEffect(() => {
-    // console.log('refText: ', refText.current?.innerText);
-  }, [refText]);
+    const interval = setTimeout(() => {
+      if (text.length < str.length) {
+        setText(str.slice(0, text.length + 1));
+      }
+    }, delay);
+    return () => clearTimeout(interval);
+  }, [text, click]);
 
   return (
     <>
@@ -33,9 +25,9 @@ const ChooseProfile = () => {
         <BaseContainer>
           <div className={styles.ChooseProfile}>
             <div className={styles.Title}>
-              <BaseText color="#e8e268">{str}</BaseText>
-              {/* <p ref={refText}>{value}</p> */}
+              <p>{text}</p>
             </div>
+            {/* <button onClick={() => setClick(true)}>кнопка</button> */}
 
             <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
               <div className={styles.IconArrow}>
