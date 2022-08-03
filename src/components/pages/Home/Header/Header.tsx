@@ -41,26 +41,31 @@ const Header = () => {
           </div>
         </Animated>
 
-        <Animated
+        {/* <Animated
           animationIn="fadeInRight"
           isVisible={true}
           animationInDelay={200}
-        >
+        > */}
+        <div className="animate__animated animate__fadeInRightBig animate__delay-1s">
           <div className={styles.Subtitle}>
             <h2>Create an account and control your finances</h2>
           </div>
-        </Animated>
+        </div>
+        {/* </Animated> */}
 
         <div className={styles.Content}>
-          <Animated
+          {/* <Animated
             animationIn="fadeIn"
             animationInDelay={5000}
             isVisible={true}
-          >
+          > */}
+          <div className="animate__animated animate__fadeIn animate__delay-3s">
             <div className={styles.Content_Logo_Icon}>
               <BaseIcon viewBox="0 0 118 114" icon={ALL_ICONS.STAR} />
             </div>
-          </Animated>
+          </div>
+
+          {/* </Animated> */}
 
           <Animated
             animationIn="fadeIn"

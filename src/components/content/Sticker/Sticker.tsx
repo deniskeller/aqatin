@@ -3,7 +3,7 @@ import styles from './Sticker.module.scss';
 
 interface Props {
   className?: string;
-  children?: ReactNode;
+  children?: React.ReactNode;
   color?: string;
   background?: string;
 }
