@@ -29,7 +29,7 @@ const GoodFor = () => {
             </AnimationOnScroll>
 
             <div className={`${styles.Stickers} ${styles.Stickers1}`}>
-              <AnimationOnScroll animateIn="animate__swing">
+              <AnimationOnScroll animateIn="animate__swing ">
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker1}`}
                   color="#e1f665"
@@ -39,7 +39,7 @@ const GoodFor = () => {
                 </Sticker>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__swing">
+              <AnimationOnScroll animateIn="animate__swing animate__delay-1s">
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker2}`}
                   color="#e1f665"
@@ -49,7 +49,7 @@ const GoodFor = () => {
                 </Sticker>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__swing">
+              <AnimationOnScroll animateIn="animate__swing animate__delay-2s">
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker3}`}
                   color="#e1f665"
@@ -61,7 +61,7 @@ const GoodFor = () => {
             </div>
 
             <div className={`${styles.Stickers} ${styles.Stickers2}`}>
-              <AnimationOnScroll animateIn="animate__swing">
+              <AnimationOnScroll animateIn="animate__swing animate__delay-3s">
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker1}`}
                   color="#e1f665"
@@ -71,7 +71,7 @@ const GoodFor = () => {
                 </Sticker>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__swing">
+              <AnimationOnScroll animateIn="animate__swing animate__delay-4s">
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker2}`}
                   color="#e1f665"
@@ -81,7 +81,7 @@ const GoodFor = () => {
                 </Sticker>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__swing">
+              <AnimationOnScroll animateIn="animate__swing animate__delay-5s">
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker3}`}
                   color="#e1f665"

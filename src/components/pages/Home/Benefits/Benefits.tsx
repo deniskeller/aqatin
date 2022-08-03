@@ -9,7 +9,7 @@ const Benefits = () => {
       <div className={styles.Wrapper}>
         <BaseContainer>
           <div className={styles.Benefits}>
-            <AnimationOnScroll animateIn="animate__fadeIn">
+            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
               <div className={styles.Benefits_Item}>
                 <div className={styles.Number}>
                   <span>01</span>
@@ -22,7 +22,7 @@ const Benefits = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeIn animate__delay">
+            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-2s">
               <div className={styles.Benefits_Item}>
                 <div className={styles.Number}>
                   <span>02</span>
@@ -35,7 +35,7 @@ const Benefits = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeIn animate__delay">
+            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-3s">
               <div
                 className={`${styles.Benefits_Item} ${styles.Benefits_Item3}`}
               >
@@ -50,7 +50,7 @@ const Benefits = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeIn">
+            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-4s">
               {' '}
               <div className={styles.Benefits_Item}>
                 <div className={styles.Number}>
@@ -64,7 +64,7 @@ const Benefits = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeIn">
+            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-5s">
               <div className={styles.Benefits_Item}>
                 <div className={styles.Number}>
                   <span>05</span>

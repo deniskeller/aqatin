@@ -28,7 +28,7 @@ const AboutProfile = () => {
               </div>
 
               <div className={styles.Item}>
-                <AnimationOnScroll animateIn="animate__fadeInLeft">
+                <AnimationOnScroll animateIn="animate__fadeInLeft animate__delay-2s">
                   <div className={styles.Item_Number}>
                     <span>02</span>
                   </div>

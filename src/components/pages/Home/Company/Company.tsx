@@ -14,19 +14,19 @@ const Company = () => {
               <AnimationOnScroll animateIn="animate__fadeInLeft">
                 <div className={styles.Title}>
                   <BaseTitle color="#1B692C" type="h2">
-                    OUR SERVICES
+                    COMPANY
                   </BaseTitle>
                 </div>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__fadeIn">
+              <AnimationOnScroll animateIn="animate__fadeIn animate__delay-2s">
                 <div className={styles.Description}>
                   <BaseText color="#948F8F">
-                    We focused on the sports industry for a reason. The fact is
-                    that this area connects thousands of people with different
-                    tasks, needs and financial capabilities. We made a decision
-                    to pay attention to each and every client. That`s why you
-                    can find different services on Aqatin platform:
+                    Aqatin is a payment system which was created specifically
+                    for the UK sport industry. Our clients are special to us.
+                    They had a character and own specialities so we want to take
+                    care of all your needs and requirements while working with
+                    your money.
                   </BaseText>
                 </div>
               </AnimationOnScroll>

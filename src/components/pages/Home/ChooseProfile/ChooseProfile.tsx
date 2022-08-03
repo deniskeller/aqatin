@@ -5,15 +5,36 @@ import styles from './ChooseProfile.module.scss';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const ChooseProfile = () => {
+  const str = 'AT THE AQATIN PLATFORM YOU CAN CHOOSE THE PROFILE TO WORK WITH:';
+
+  const [value, setValue] = React.useState(str);
+
+  const refText = React.useRef(null);
+  let int = 1;
+
+  const computedTicker = (str: string) => {
+    setValue(str.slice(0, int));
+    int++;
+
+    if (int > str.length) {
+      int = 1;
+    }
+
+    setTimeout(computedTicker, 1000);
+  };
+
+  React.useEffect(() => {
+    // console.log('refText: ', refText.current?.innerText);
+  }, [refText]);
+
   return (
     <>
       <div className={styles.Wrapper}>
         <BaseContainer>
           <div className={styles.ChooseProfile}>
             <div className={styles.Title}>
-              <BaseText color="#e8e268">
-                AT THE AQATIN PLATFORM YOU CAN CHOOSE THE PROFILE TO WORK WITH:
-              </BaseText>
+              <BaseText color="#e8e268">{str}</BaseText>
+              {/* <p ref={refText}>{value}</p> */}
             </div>
 
             <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">

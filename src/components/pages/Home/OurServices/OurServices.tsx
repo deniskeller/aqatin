@@ -33,30 +33,30 @@ const OurServices = () => {
           </div>
 
           <div className={styles.Stickers}>
-            <AnimationOnScroll animateIn="animate__swing">
+            <AnimationOnScroll animateIn="animate__swing animate__delay-1s">
               <Sticker className={`${styles.Sticker} ${styles.Sticker1}`}>
                 Customer account <br /> opening
               </Sticker>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__swing">
+            <AnimationOnScroll animateIn="animate__swing animate__delay-2s">
               <Sticker className={`${styles.Sticker} ${styles.Sticker2}`}>
                 BUSINESS <br /> account opening
               </Sticker>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__swing">
+            <AnimationOnScroll animateIn="animate__swing animate__delay-3s">
               <Sticker className={`${styles.Sticker} ${styles.Sticker3}`}>
                 Consumer <br /> payment cards
               </Sticker>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__swing">
+            <AnimationOnScroll animateIn="animate__swing animate__delay-4s">
               <Sticker className={`${styles.Sticker} ${styles.Sticker4}`}>
                 Business payment <br /> cards
               </Sticker>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__swing">
+            <AnimationOnScroll animateIn="animate__swing animate__delay-5s">
               <Sticker className={`${styles.Sticker} ${styles.Sticker5}`}>
                 E-wallet payments
               </Sticker>
