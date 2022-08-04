@@ -11,10 +11,7 @@ const AboutProfile = () => {
           <div className={styles.AboutProfile}>
             <div className={styles.AboutProfile_Items}>
               <div className={styles.Item}>
-                <AnimationOnScroll
-                  animateIn="animate__fadeInLeft"
-                  //  animateOnce
-                >
+                <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce>
                   <div className={styles.Item_Number}>
                     <span>01</span>
                   </div>
@@ -33,7 +30,7 @@ const AboutProfile = () => {
               <div className={styles.Item}>
                 <AnimationOnScroll
                   animateIn="animate__fadeInLeft animate__delay-2s"
-                  // animateOnce
+                  animateOnce
                 >
                   <div className={styles.Item_Number}>
                     <span>02</span>
@@ -53,7 +50,7 @@ const AboutProfile = () => {
         </BaseContainer>
         <AnimationOnScroll
           animateIn="animate__fadeInRight animate__delay-4s"
-          // animateOnce
+          animateOnce
         >
           <div className={styles.AboutProfile_Description}>
             <p>
