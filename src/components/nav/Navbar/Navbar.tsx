@@ -46,10 +46,11 @@ const Navbar: React.FC<Props> = () => {
           <BaseButton
             title="Sign up"
             type="link"
+            size="mini"
             className={styles.Btn_Signup}
           />
 
-          <BaseButton title="Log in" className={styles.Btn_Login} />
+          <BaseButton title="Log in" size="mini" className={styles.Btn_Login} />
         </div>
       </div>
     </div>

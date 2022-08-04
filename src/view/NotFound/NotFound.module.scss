@@ -1,0 +1,69 @@
+.Wrapper {
+  background: $green-bg;
+}
+
+.NotFound {
+  @extend %center;
+  flex-direction: column;
+  padding-top: em(94px);
+  padding-bottom: em(130px);
+  min-height: 100vh;
+
+  &_Card {
+    @extend %center;
+    width: em(399px);
+    height: em(229px);
+    border: 2px solid $yellow-bg;
+    border-radius: em(10px);
+    margin-bottom: em(50px);
+    h1 {
+      font-family: $font-Gobold;
+      font-style: normal;
+      font-weight: 400;
+      font-size: em(150px);
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $yellow-bg;
+    }
+  }
+
+  &_Title {
+    margin-bottom: em(45px);
+    div {
+      font-size: em(35px);
+      font-style: normal;
+      font-weight: normal;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $yellow-bg;
+    }
+  }
+
+  &_Subtitle {
+    margin-bottom: em(60px);
+    div {
+      font-size: em(25px);
+      font-style: normal;
+      font-weight: 900;
+      line-height: 100%;
+      color: $white;
+    }
+  }
+
+  &_Action {
+    position: relative;
+
+    .Button {
+      width: em(205px);
+      height: em(62px);
+    }
+  }
+
+  &_Icon {
+    position: absolute;
+    right: em(-110px);
+    top: em(-40px);
+    width: em(70px);
+    height: em(58.93px);
+  }
+}

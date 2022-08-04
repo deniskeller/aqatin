@@ -8,6 +8,7 @@ interface Props {
   title?: string;
   onClick?: (ev: React.MouseEvent<HTMLButtonElement>) => void;
   type?: string;
+  size?: string;
   disabled?: boolean;
   className?: string;
   loading?: boolean;
@@ -17,6 +18,7 @@ const BaseButton: React.FC<Props> = ({
   title = '',
   children,
   onClick,
+  size = '',
   type = 'default',
   disabled = false,
   className = '',
@@ -37,7 +39,9 @@ const BaseButton: React.FC<Props> = ({
       )}
 
       {children}
-      <span className={styles.Title}>{title}</span>
+      <span className={`${styles.Title} ${styles['Title_' + size]}`}>
+        {title}
+      </span>
     </button>
   );
 };

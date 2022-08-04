@@ -7,10 +7,14 @@
   @extend %button;
 
   .Title {
-    font-size: em(14px);
+    font-size: em(18px);
     font-family: 'Montserrat';
     font-weight: 600;
     text-transform: uppercase;
+  }
+
+  .Title_mini {
+    font-size: em(14px);
   }
 }
 
