@@ -1,5 +1,5 @@
 @mixin ifmobile {
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     @content;
   }
 }
@@ -11,7 +11,7 @@
 }
 
 @mixin ifdesktop {
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 768px) {
     @content;
   }
 }
