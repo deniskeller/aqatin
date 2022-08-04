@@ -7,7 +7,7 @@ import { Waypoint } from 'react-waypoint';
 
 const ChooseProfile = () => {
   const str = 'AT THE AQATIN PLATFORM YOU CAN CHOOSE THE PROFILE TO WORK WITH:';
-  const delay = 10;
+  const delay = 0.5;
   const [text, setText] = React.useState<string>('');
   const [click, setClick] = React.useState(false);
 
@@ -36,7 +36,7 @@ const ChooseProfile = () => {
             {/* <button onClick={() => setClick(true)}>кнопка</button> */}
 
             <AnimationOnScroll
-              animateIn="animate__fadeIn animate__delay-3s"
+              animateIn="animate__fadeIn animate__delay-1s"
               animateOnce
             >
               <div className={styles.IconArrow}>
@@ -45,7 +45,7 @@ const ChooseProfile = () => {
             </AnimationOnScroll>
 
             <AnimationOnScroll
-              animateIn="animate__fadeIn animate__delay-4s"
+              animateIn="animate__fadeIn animate__delay-2s"
               animateOnce
             >
               <div className={styles.IconStar}>
