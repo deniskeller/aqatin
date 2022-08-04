@@ -27,6 +27,24 @@ html {
   }
 }
 
+@media screen and (max-aspect-ratio: 3840/2090) {
+  html {
+    font-size: math.div(41, 3840) * 100vw;
+  }
+}
+
+@media only screen and (min-width: 3840px) and (max-aspect-ratio: 3840/2090) {
+  html {
+    font-size: 41px;
+  }
+}
+
+@media only screen and (min-height: 2090px) and (min-aspect-ratio: 3840/2090) {
+  html {
+    font-size: 41px;
+  }
+}
+
 html {
   // @include iftablet {
   //   font-size: math.div(16, 769) * 100vw;
