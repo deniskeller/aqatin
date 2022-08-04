@@ -53,9 +53,15 @@ const AboutProfile = () => {
           animateOnce
         >
           <div className={styles.AboutProfile_Description}>
-            <p>
-              This system consists of all your money transactions in one place.
-            </p>
+            <AnimationOnScroll
+              animateIn="animate__fadeIn animate__delay-3s AboutProfile_Description"
+              animateOnce
+            >
+              <p>
+                This system consists of all your money transactions in one
+                place.
+              </p>
+            </AnimationOnScroll>
           </div>
         </AnimationOnScroll>
       </div>

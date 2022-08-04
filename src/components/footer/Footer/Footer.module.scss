@@ -1,0 +1,223 @@
+.Wrapper {
+  background: $black-bg;
+}
+
+.Footer {
+  padding-top: em(76px);
+  padding-bottom: em(56px);
+
+  &_Top {
+    display: grid;
+    grid-template-columns: em(145px) 1fr;
+    grid-gap: em(129px);
+    margin-bottom: em(20px);
+  }
+
+  &_Logo {
+    .Logo {
+      width: em(145px);
+      height: em(39px);
+      margin-bottom: em(5px);
+      path {
+        fill: $white;
+      }
+    }
+
+    .Copyright {
+      font-size: em(13px);
+      line-height: 120%;
+      font-family: $font-CalibriLight;
+      font-style: normal;
+      font-weight: 400;
+      color: $yellow-text-footer;
+    }
+  }
+
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &_Title {
+      margin-bottom: em(24px);
+      span {
+        font-size: em(15px);
+        font-style: normal;
+        font-weight: 900;
+        color: $yellow;
+        text-transform: uppercase;
+      }
+    }
+
+    &_Ul {
+      list-style: none;
+    }
+
+    &_Li {
+      margin-bottom: em(13px);
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        font-size: em(13px);
+        font-family: 'Montserrat';
+        font-weight: 300;
+        line-height: 100%;
+        color: $white;
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+  &_Bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    .Social {
+      margin-right: em(149px);
+
+      .SocialItems {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: em(145px);
+        margin-bottom: em(50px);
+        .SocialIcon {
+          position: relative;
+        }
+
+        .Facebook {
+          width: em(9px);
+          height: em(19px);
+        }
+
+        .Instagram {
+          width: em(17px);
+          height: em(18px);
+        }
+
+        .Twitter {
+          width: em(20px);
+          height: em(17px);
+        }
+
+        .Linkedin {
+          width: em(18px);
+          height: em(18px);
+        }
+      }
+
+      .LinkHosted {
+        font-size: em(13px);
+        line-height: 120%;
+        font-family: $font-CalibriLight;
+        font-style: normal;
+        font-weight: 400;
+        color: $yellow-text-footer;
+        a {
+          font-size: inherit;
+          line-height: 120%;
+          font-family: $font-CalibriLight;
+          font-style: normal;
+          font-weight: 400;
+          color: $yellow-text-footer;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .Form {
+      display: flex;
+      flex-direction: column;
+      &_Title {
+        margin-bottom: em(15px);
+        span {
+          font-size: em(15px);
+          font-weight: 900;
+          color: $green;
+          text-transform: uppercase;
+        }
+      }
+
+      &_Actions {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .Input {
+          width: em(294px);
+          margin-right: em(11px);
+          span {
+            height: em(49px);
+          }
+        }
+
+        .Button {
+          width: em(70px);
+          height: em(49px);
+
+          .Icon {
+            width: em(29px);
+          }
+        }
+      }
+
+      .SuccessAlert {
+        width: em(406px);
+        height: em(120px);
+        border: 2px solid $green;
+        border-radius: em(10px);
+        padding: em(29px) em(30px);
+        margin-top: em(-40px);
+
+        &_Title {
+          margin-bottom: em(15px);
+          span {
+            font-size: em(15px);
+            line-height: 100%;
+            font-weight: 900;
+            color: $green;
+            text-transform: uppercase;
+          }
+        }
+
+        &_Subtitle {
+          font-size: em(13px);
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 300;
+          color: $white;
+        }
+      }
+    }
+
+    .Employees {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: auto;
+
+      .Mastercard {
+        width: em(44.01px);
+        height: em(32.56px);
+        margin-right: em(28px);
+      }
+
+      .Ico {
+        position: relative;
+        width: em(53px);
+        height: em(34px);
+        margin-right: em(28px);
+      }
+
+      .Pci {
+        width: em(91px);
+        height: em(29.9px);
+      }
+    }
+  }
+}

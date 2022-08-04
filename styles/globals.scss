@@ -14,3 +14,11 @@
   top: em(240px) !important;
   right: em(-100px) !important;
 }
+
+.AboutProfile_Description {
+  --animate-delay: 0.5s !important;
+}
+
+path.dot {
+  fill: $green !important;
+}

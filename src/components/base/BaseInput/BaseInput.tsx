@@ -17,6 +17,7 @@ interface Props {
   autocomplete?: string;
   error?: string | boolean;
   value: string | number;
+  size?: string;
   onChange(value: string | number): void;
   onKeyDown?: React.KeyboardEventHandler;
 }
@@ -31,6 +32,7 @@ const BaseInput: React.FC<Props> = ({
   max,
   icon,
   iconPosition,
+  size = 'default',
   required = false,
   placeholder,
   className = '',
@@ -61,7 +63,7 @@ const BaseInput: React.FC<Props> = ({
         <input
           value={value}
           type={newType || type}
-          className={`${styles.Input}  ${
+          className={`${styles.Input} ${styles['Input_' + size]}  ${
             iconPosition === 'right' || type === 'password'
               ? styles.InputIconRight
               : iconPosition === 'left'

@@ -13,6 +13,13 @@
 }
 
 @font-face {
+  font-family: 'Calibri-Light';
+  font-style: normal;
+  src: url('~assets/fonts/calibril.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
   font-family: 'Gobold-Hollow';
   src: url('~assets/fonts/Gobold-Hollow.woff') format('woff'),
     url('~assets/fonts/Gobold-Hollow.eot') format('eot');

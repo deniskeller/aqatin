@@ -1,7 +1,7 @@
 //general
 .Button {
   font-size: 100%;
-  min-width: em(120px);
+  min-width: em(70px);
   padding: em(8px) em(15px);
   border-radius: em(10px);
   @extend %button;
@@ -46,16 +46,15 @@
 .Button_success {
   color: $white;
   background: $green;
-  box-shadow: 0 em(2px) em(16px) rgba(15, 240, 67, 0.5);
   transition: box-shadow $speed;
 
   &:hover {
-    background: darken($green, 10%);
+    background: lighter($green, 10%);
     box-shadow: 0 em(2px) em(16px) rgba(15, 240, 67, 1);
   }
 
   &:active {
-    background: darken($green, 20%);
+    background: lighter($green, 20%);
     box-shadow: none;
   }
 }
