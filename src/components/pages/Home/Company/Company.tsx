@@ -11,7 +11,7 @@ const Company = () => {
         <BaseContainer>
           <div className={styles.Company}>
             <div className={styles.Company_Aboutinfo}>
-              <AnimationOnScroll animateIn="animate__fadeInLeft">
+              <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce>
                 <div className={styles.Title}>
                   <BaseTitle color="#1B692C" type="h2">
                     COMPANY
@@ -19,7 +19,7 @@ const Company = () => {
                 </div>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__fadeIn animate__delay-2s">
+              <AnimationOnScroll animateIn="animate__fadeIn animate__delay-2s" animateOnce>
                 <div className={styles.Description}>
                   <BaseText color="#948F8F">
                     Aqatin is a payment system which was created specifically
@@ -32,7 +32,7 @@ const Company = () => {
               </AnimationOnScroll>
             </div>
 
-            <AnimationOnScroll animateIn="animate__zoomIn">
+            <AnimationOnScroll animateIn="animate__zoomIn" animateOnce>
               <div className={styles.Company_Image}>
                 <Image
                   src="/images/image/football_field.png"

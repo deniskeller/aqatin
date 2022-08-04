@@ -8,3 +8,9 @@
 .Header_Partners {
   --animate-delay: 0.5s !important;
 }
+
+.animate__fadeInRight {
+  position: absolute !important;
+  top: em(240px) !important;
+  right: em(-100px) !important;
+}

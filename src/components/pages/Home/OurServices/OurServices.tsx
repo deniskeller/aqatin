@@ -11,7 +11,7 @@ const OurServices = () => {
       <BaseContainer>
         <div className={styles.OurServices}>
           <div className={styles.Header}>
-            <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+            <AnimationOnScroll animateIn="animate__fadeInLeftBig" animateOnce>
               <div className={styles.Title}>
                 <BaseTitle color="#1B692C" type="h2">
                   OUR SERVICES
@@ -19,7 +19,7 @@ const OurServices = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeInRightBig">
+            <AnimationOnScroll animateIn="animate__fadeInRightBig" animateOnce>
               <div className={styles.Description}>
                 <BaseText>
                   We focused on the sports industry for a reason. The fact is
@@ -33,30 +33,45 @@ const OurServices = () => {
           </div>
 
           <div className={styles.Stickers}>
-            <AnimationOnScroll animateIn="animate__swing animate__delay-1s">
+            <AnimationOnScroll
+              animateIn="animate__swing animate__delay-1s"
+              animateOnce
+            >
               <Sticker className={`${styles.Sticker} ${styles.Sticker1}`}>
                 Customer account <br /> opening
               </Sticker>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__swing animate__delay-2s">
+            <AnimationOnScroll
+              animateIn="animate__swing animate__delay-2s"
+              animateOnce
+            >
               <Sticker className={`${styles.Sticker} ${styles.Sticker2}`}>
                 BUSINESS <br /> account opening
               </Sticker>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__swing animate__delay-3s">
+            <AnimationOnScroll
+              animateIn="animate__swing animate__delay-3s"
+              animateOnce
+            >
               <Sticker className={`${styles.Sticker} ${styles.Sticker3}`}>
                 Consumer <br /> payment cards
               </Sticker>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__swing animate__delay-4s">
+            <AnimationOnScroll
+              animateIn="animate__swing animate__delay-4s"
+              animateOnce
+            >
               <Sticker className={`${styles.Sticker} ${styles.Sticker4}`}>
                 Business payment <br /> cards
               </Sticker>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__swing animate__delay-5s">
+            <AnimationOnScroll
+              animateIn="animate__swing animate__delay-5s"
+              animateOnce
+            >
               <Sticker className={`${styles.Sticker} ${styles.Sticker5}`}>
                 E-wallet payments
               </Sticker>

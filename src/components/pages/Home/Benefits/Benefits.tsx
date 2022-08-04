@@ -9,7 +9,10 @@ const Benefits = () => {
       <div className={styles.Wrapper}>
         <BaseContainer>
           <div className={styles.Benefits}>
-            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
+            <AnimationOnScroll
+              animateIn="animate__fadeIn animate__delay-1s"
+              animateOnce
+            >
               <div className={styles.Benefits_Item}>
                 <div className={styles.Number}>
                   <span>01</span>
@@ -22,7 +25,10 @@ const Benefits = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-2s">
+            <AnimationOnScroll
+              animateIn="animate__fadeIn animate__delay-2s"
+              animateOnce
+            >
               <div className={styles.Benefits_Item}>
                 <div className={styles.Number}>
                   <span>02</span>
@@ -35,7 +41,10 @@ const Benefits = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-3s">
+            <AnimationOnScroll
+              animateIn="animate__fadeIn animate__delay-3s"
+              animateOnce
+            >
               <div
                 className={`${styles.Benefits_Item} ${styles.Benefits_Item3}`}
               >
@@ -50,7 +59,10 @@ const Benefits = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-4s">
+            <AnimationOnScroll
+              animateIn="animate__fadeIn animate__delay-4s"
+              animateOnce
+            >
               {' '}
               <div className={styles.Benefits_Item}>
                 <div className={styles.Number}>
@@ -64,7 +76,10 @@ const Benefits = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-5s">
+            <AnimationOnScroll
+              animateIn="animate__fadeIn animate__delay-5s"
+              animateOnce
+            >
               <div className={styles.Benefits_Item}>
                 <div className={styles.Number}>
                   <span>05</span>

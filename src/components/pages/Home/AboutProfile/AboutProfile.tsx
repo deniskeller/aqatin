@@ -11,7 +11,10 @@ const AboutProfile = () => {
           <div className={styles.AboutProfile}>
             <div className={styles.AboutProfile_Items}>
               <div className={styles.Item}>
-                <AnimationOnScroll animateIn="animate__fadeInLeft">
+                <AnimationOnScroll
+                  animateIn="animate__fadeInLeft"
+                  //  animateOnce
+                >
                   <div className={styles.Item_Number}>
                     <span>01</span>
                   </div>
@@ -28,7 +31,10 @@ const AboutProfile = () => {
               </div>
 
               <div className={styles.Item}>
-                <AnimationOnScroll animateIn="animate__fadeInLeft animate__delay-2s">
+                <AnimationOnScroll
+                  animateIn="animate__fadeInLeft animate__delay-2s"
+                  // animateOnce
+                >
                   <div className={styles.Item_Number}>
                     <span>02</span>
                   </div>
@@ -45,7 +51,10 @@ const AboutProfile = () => {
             </div>
           </div>
         </BaseContainer>
-        <AnimationOnScroll animateIn="animate__fadeInRight">
+        <AnimationOnScroll
+          animateIn="animate__fadeInRight animate__delay-4s"
+          // animateOnce
+        >
           <div className={styles.AboutProfile_Description}>
             <p>
               This system consists of all your money transactions in one place.

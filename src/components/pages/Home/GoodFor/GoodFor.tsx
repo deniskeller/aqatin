@@ -10,7 +10,7 @@ const GoodFor = () => {
       <div className={styles.Wrapper}>
         <BaseContainer>
           <div className={styles.GoodFor}>
-            <AnimationOnScroll animateIn="animate__fadeIn">
+            <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>
               <div className={styles.Description}>
                 <BaseText>
                   We make the process of collecting money and monitoring the
@@ -20,7 +20,7 @@ const GoodFor = () => {
               </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeInLeft">
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce>
               <div className={styles.Title}>
                 <BaseTitle color="#1B692C" type="h2">
                   GOOD FOR
@@ -29,7 +29,7 @@ const GoodFor = () => {
             </AnimationOnScroll>
 
             <div className={`${styles.Stickers} ${styles.Stickers1}`}>
-              <AnimationOnScroll animateIn="animate__swing ">
+              <AnimationOnScroll animateIn="animate__swing" animateOnce>
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker1}`}
                   color="#e1f665"
@@ -39,7 +39,10 @@ const GoodFor = () => {
                 </Sticker>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__swing animate__delay-1s">
+              <AnimationOnScroll
+                animateIn="animate__swing animate__delay-1s"
+                animateOnce
+              >
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker2}`}
                   color="#e1f665"
@@ -49,7 +52,10 @@ const GoodFor = () => {
                 </Sticker>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__swing animate__delay-2s">
+              <AnimationOnScroll
+                animateIn="animate__swing animate__delay-2s"
+                animateOnce
+              >
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker3}`}
                   color="#e1f665"
@@ -61,7 +67,10 @@ const GoodFor = () => {
             </div>
 
             <div className={`${styles.Stickers} ${styles.Stickers2}`}>
-              <AnimationOnScroll animateIn="animate__swing animate__delay-3s">
+              <AnimationOnScroll
+                animateIn="animate__swing animate__delay-3s"
+                animateOnce
+              >
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker1}`}
                   color="#e1f665"
@@ -71,7 +80,10 @@ const GoodFor = () => {
                 </Sticker>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__swing animate__delay-4s">
+              <AnimationOnScroll
+                animateIn="animate__swing animate__delay-4s"
+                animateOnce
+              >
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker2}`}
                   color="#e1f665"
@@ -81,7 +93,10 @@ const GoodFor = () => {
                 </Sticker>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__swing animate__delay-5s">
+              <AnimationOnScroll
+                animateIn="animate__swing animate__delay-5s"
+                animateOnce
+              >
                 <Sticker
                   className={`${styles.Sticker} ${styles.Sticker3}`}
                   color="#e1f665"
