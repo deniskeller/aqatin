@@ -54,10 +54,13 @@
     }
 
     &_Li {
-      margin-bottom: em(13px);
+      line-height: 100%;
+      margin-bottom: em(14px);
+
       &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
       }
+
       span {
         font-size: em(13px);
         font-family: 'Montserrat';
@@ -127,6 +130,9 @@
           font-weight: 400;
           color: $yellow-text-footer;
           text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }
@@ -134,10 +140,13 @@
     .Form {
       display: flex;
       flex-direction: column;
+      position: relative;
       &_Title {
         margin-bottom: em(15px);
         span {
+          display: block;
           font-size: em(15px);
+          line-height: 100%;
           font-weight: 900;
           color: $green;
           text-transform: uppercase;
@@ -171,8 +180,12 @@
         height: em(120px);
         border: 2px solid $green;
         border-radius: em(10px);
-        padding: em(29px) em(30px);
-        margin-top: em(-40px);
+        padding: em(20px) em(30px) em(29px);
+        position: absolute;
+        top: em(-100px);
+        animation-name: FadeIn;
+        animation-duration: 2s;
+        transition-timing-function: linear;
 
         &_Title {
           margin-bottom: em(15px);
@@ -219,5 +232,50 @@
         height: em(29.9px);
       }
     }
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

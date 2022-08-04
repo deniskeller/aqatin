@@ -92,13 +92,13 @@ const Footer = () => {
                       <ul className={styles.Navbar_Ul}>
                         {item.list?.map((el, i) => {
                           return (
-                            <Link href={el.href} key={i}>
-                              <a>
-                                <li className={styles.Navbar_Li}>
+                            <li className={styles.Navbar_Li} key={i}>
+                              <Link href={el.href}>
+                                <a>
                                   <span>{el.name}</span>
-                                </li>
-                              </a>
-                            </Link>
+                                </a>
+                              </Link>
+                            </li>
                           );
                         })}
                       </ul>
@@ -177,7 +177,10 @@ const Footer = () => {
 
               <div className={styles.Form}>
                 {!success ? (
-                  <>
+                  <span
+                    className={styles.FormEmail}
+                    style={{ opacity: !success ? '1' : '0' }}
+                  >
                     <div className={styles.Form_Title}>
                       <span>SUBMIT FOR UPDATES</span>
                     </div>
@@ -203,7 +206,7 @@ const Footer = () => {
                         />
                       </BaseButton>
                     </div>
-                  </>
+                  </span>
                 ) : (
                   <>
                     <div
