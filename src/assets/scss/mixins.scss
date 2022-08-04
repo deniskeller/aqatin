@@ -16,11 +16,11 @@
   }
 }
 
-// @mixin iftablet {
-//   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-//     @content;
-//   }
-// }
+@mixin iftablet {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
 
 @mixin respondH($media) {
   @media only screen and (min-height: $media) {

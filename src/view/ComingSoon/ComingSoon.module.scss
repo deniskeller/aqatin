@@ -1,0 +1,41 @@
+.Wrapper {
+  background: $green-bg;
+}
+
+.ComingSoon {
+  @extend %center;
+  flex-direction: column;
+  padding-top: em(94px);
+  padding-bottom: em(130px);
+  min-height: 100vh;
+
+  &_Title {
+    margin-bottom: em(140px);
+    h1 {
+      font-family: $font-Gobold;
+      font-style: normal;
+      font-weight: 400;
+      font-size: em(150px);
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $yellow-bg;
+    }
+  }
+
+  &_Action {
+    position: relative;
+
+    .Button {
+      width: em(205px);
+      height: em(62px);
+    }
+  }
+
+  &_Icon {
+    position: absolute;
+    right: em(-110px);
+    top: em(-40px);
+    width: em(70px);
+    height: em(58.93px);
+  }
+}
