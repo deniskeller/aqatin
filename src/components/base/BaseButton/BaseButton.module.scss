@@ -11,6 +11,10 @@
     font-family: 'Montserrat';
     font-weight: 600;
     text-transform: uppercase;
+    font-size: em(14px);
+    @include ifdesktop {
+      font-size: em(18px);
+    }
   }
 
   .Title_mini {
@@ -104,7 +108,7 @@
   transition: all 1s ease;
 }
 //icon loader animation
-@keyframes rotate {
+@include keyframe(rotate) {
   from {
     transform: rotate(360deg);
   }

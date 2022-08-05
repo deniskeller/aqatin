@@ -46,12 +46,12 @@ html {
 // }
 
 html {
-  // @include iftablet {
-  //   font-size: math.div(14, 768) * 100vw;
-  // }
+  @include iftablet {
+    font-size: math.div(16, 768) * 100vw;
+  }
 
   @include ifmobile {
-    font-size: math.div(18, 767) * 100vw;
+    font-size: math.div(16, 360) * 100vw;
   }
 }
 

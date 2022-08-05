@@ -1,12 +1,12 @@
 .Wrapper {
-  background: $green-bg;
+  background: $green;
 }
 
 .NotFound {
   @extend %center;
   flex-direction: column;
-  padding-top: em(94px);
-  padding-bottom: em(130px);
+  padding-top: em(100px);
+  padding-bottom: em(80px);
   min-height: 100vh;
 
   &_Card {
@@ -16,6 +16,16 @@
     border: 2px solid $yellow-bg;
     border-radius: em(10px);
     margin-bottom: em(50px);
+
+    @include iftablet {
+      width: em(355px);
+      height: em(229px);
+    }
+    @include ifmobile {
+      width: em(280px);
+      height: em(155px);
+      margin-bottom: em(39px);
+    }
     h1 {
       font-family: $font-Gobold;
       font-style: normal;
@@ -24,29 +34,54 @@
       line-height: 100%;
       text-transform: uppercase;
       color: $yellow-bg;
+      @include iftablet {
+        font-size: em(130px);
+      }
+      @include ifmobile {
+        font-size: em(90px);
+      }
     }
   }
 
   &_Title {
     margin-bottom: em(45px);
     div {
-      font-size: em(35px);
+      font-size: em(34px);
       font-style: normal;
       font-weight: normal;
       line-height: 100%;
       text-transform: uppercase;
       color: $yellow-bg;
+      @include ifmobile {
+        font-size: em(20px);
+      }
     }
   }
 
   &_Subtitle {
     margin-bottom: em(60px);
+    @include iftablet {
+      margin-bottom: em(125px);
+    }
+
+    @include ifmobile {
+      max-width: em(260px);
+      margin-bottom: em(116px);
+    }
     div {
       font-size: em(25px);
       font-style: normal;
       font-weight: 900;
       line-height: 100%;
       color: $white;
+      text-align: center;
+      @include iftablet {
+        font-size: em(18px);
+      }
+      @include ifmobile {
+        font-size: em(16px);
+        line-height: 150%;
+      }
     }
   }
 
@@ -56,14 +91,32 @@
     .Button {
       width: em(205px);
       height: em(62px);
+      @include iftablet {
+        width: em(156px);
+        height: em(50px);
+      }
+      @include ifmobile {
+        width: em(156px);
+        height: em(42px);
+      }
     }
   }
 
   &_Icon {
     position: absolute;
-    right: em(-110px);
     top: em(-40px);
+    right: em(-110px);
     width: em(70px);
     height: em(58.93px);
+    @include iftablet {
+      top: em(-77px);
+      right: em(-90px);
+      transform: rotateZ(-15deg);
+    }
+    @include ifmobile {
+      top: em(-90px);
+      right: em(-60px);
+      transform: rotateZ(-30deg);
+    }
   }
 }

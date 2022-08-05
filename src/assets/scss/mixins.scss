@@ -4,49 +4,14 @@
   }
 }
 
-@mixin ifmobileL {
-  @media only screen and (max-width: 768px) and (orientation: landscape) {
-    @content;
-  }
-}
-
 @mixin ifdesktop {
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1025px) {
     @content;
   }
 }
 
 @mixin iftablet {
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin respondH($media) {
-  @media only screen and (min-height: $media) {
-    @content;
-  }
-}
-
-@mixin respondHFrom($media) {
-  @media only screen and (max-height: $media) {
-    @content;
-  }
-}
-
-@mixin respond($media) {
-  @media only screen and (max-width: $media) {
-    @content;
-  }
-}
-
-@mixin respondFrom($media) {
-  @media only screen and (min-width: $media) {
-    @content;
-  }
-}
-@mixin detectIe() {
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     @content;
   }
 }
@@ -63,6 +28,14 @@
   }
 
   @-moz-keyframes #{$animation_name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation_name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animation_name} {
     @content;
   }
 

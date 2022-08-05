@@ -1,16 +1,19 @@
 .Wrapper {
-  background: $green-bg;
+  background: $green;
 }
 
 .ComingSoon {
   @extend %center;
   flex-direction: column;
-  padding-top: em(94px);
-  padding-bottom: em(130px);
+  padding-top: em(145px);
+  padding-bottom: em(100px);
   min-height: 100vh;
 
   &_Title {
-    margin-bottom: em(140px);
+    margin-bottom: em(130px);
+    @include iftablet {
+      max-width: em(400px);
+    }
     h1 {
       font-family: $font-Gobold;
       font-style: normal;
@@ -19,6 +22,16 @@
       line-height: 100%;
       text-transform: uppercase;
       color: $yellow-bg;
+      text-align: center;
+      @include iftablet {
+        font-size: em(130px);
+        line-height: 130%;
+      }
+
+      @include ifmobile {
+        font-size: em(90px);
+        line-height: 120%;
+      }
     }
   }
 
@@ -28,14 +41,33 @@
     .Button {
       width: em(205px);
       height: em(62px);
+
+      @include iftablet {
+        width: em(156px);
+        height: em(50px);
+      }
+      @include ifmobile {
+        width: em(156px);
+        height: em(42px);
+      }
     }
   }
 
   &_Icon {
     position: absolute;
-    right: em(-110px);
     top: em(-40px);
+    right: em(-110px);
     width: em(70px);
     height: em(58.93px);
+    @include iftablet {
+      top: em(-77px);
+      right: em(-90px);
+      transform: rotateZ(-15deg);
+    }
+    @include ifmobile {
+      top: em(-90px);
+      right: em(-60px);
+      transform: rotateZ(-30deg);
+    }
   }
 }
