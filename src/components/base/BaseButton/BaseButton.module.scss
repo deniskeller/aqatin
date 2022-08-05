@@ -1,8 +1,7 @@
 //general
 .Button {
   font-size: 100%;
-  min-width: em(70px);
-  padding: em(8px) em(15px);
+  min-height: em(42px);
   border-radius: em(10px);
   @extend %button;
 
@@ -90,7 +89,7 @@
   color: $black;
   padding: 0;
   min-width: auto;
-  height: 100%;
+  min-height: 100%;
   border-color: transparent;
   background: 0 0;
   box-shadow: none;

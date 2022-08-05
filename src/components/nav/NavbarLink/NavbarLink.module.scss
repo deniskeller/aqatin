@@ -1,19 +1,38 @@
 .Li {
+  line-height: 100%;
   list-style: none;
-  min-width: em(60px);
+  // min-width: em(60px);
   margin-left: em(80px);
   &:first-child {
     margin-left: 0;
+  }
+
+  @include ifmobile {
+    margin-left: 0;
+    margin-bottom: em(25px);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 .Link {
   font-size: em(14px);
+  line-height: 100%;
+  white-space: nowrap;
   font-weight: 600;
   font-style: normal;
   font-family: 'Montserrat';
   color: $black;
   text-transform: uppercase;
+
+  @include iftablet {
+    font-size: em(14px);
+  }
+
+  @include ifmobile {
+    color: $white;
+  }
 }
 
 .Link:hover {

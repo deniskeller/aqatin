@@ -46,9 +46,9 @@ html {
 // }
 
 html {
-  @include iftablet {
-    font-size: math.div(16, 768) * 100vw;
-  }
+  // @include iftablet {
+  //   font-size: math.div(16, 768) * 100vw;
+  // }
 
   @include ifmobile {
     font-size: math.div(16, 360) * 100vw;
@@ -57,6 +57,7 @@ html {
 
 body {
   min-height: 100%;
+  // overflow: hidden;
 }
 
 a {

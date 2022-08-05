@@ -3,4 +3,12 @@
   max-width: em(1027px);
   margin: 0 auto;
   position: relative;
+
+  // @include iftablet {
+  //   max-width: em(617px);
+  // }
+
+  @include ifmobile {
+    max-width: em(280px);
+  }
 }

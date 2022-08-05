@@ -7,6 +7,9 @@
 
   &_h1 {
     font-size: em(50px);
+    // @include iftablet {
+    //   font-size: em(34px);
+    // }
   }
   &_h2 {
     font-size: em(25px);
