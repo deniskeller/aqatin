@@ -9,10 +9,22 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @include ifmobile {
+      padding-top: em(60px);
+      padding-bottom: em(46px);
+    }
+
     &_Aboutinfo {
       padding-top: em(80px);
+      @include ifmobile {
+        padding-top: 0;
+        margin-bottom: em(40px);
+      }
       .Title {
         margin-bottom: em(35px);
+        @include ifmobile {
+          margin-bottom: em(40px);
+        }
       }
 
       .Description {
@@ -25,6 +37,11 @@
       right: em(-60px);
       width: em(477px);
       height: em(600px);
+      @include ifmobile {
+        right: 0;
+        width: em(272px);
+        height: em(295px);
+      }
     }
   }
 }

@@ -5,4 +5,8 @@
   font-size: em(25px);
   line-height: 152.5%;
   text-transform: uppercase;
+
+  @include ifmobile {
+    font-size: em(16px);
+  }
 }

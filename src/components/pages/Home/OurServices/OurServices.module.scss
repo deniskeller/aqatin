@@ -1,6 +1,9 @@
 .OurServices {
   position: relative;
   padding-bottom: em(95px);
+  @include ifmobile {
+    padding-bottom: em(56px);
+  }
 
   .Icon {
     width: em(116.54px);
@@ -8,17 +11,29 @@
     position: absolute;
     right: em(-15px);
     bottom: em(32px);
+    @include ifmobile {
+      display: none;
+    }
   }
 }
 
 .Header {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: em(50px);
+  @include ifmobile {
+    margin-bottom: em(32px);
+  }
 
   .Title {
     max-width: em(150px);
     margin-right: em(140px);
+    @include ifmobile {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: em(40px);
+    }
   }
 
   .Description {
@@ -34,9 +49,31 @@
   gap: em(35px) em(28px);
   max-width: em(776px);
   margin-left: em(187px);
+  @include ifmobile {
+    flex-direction: column;
+    justify-content: normal;
+    margin-left: 0;
+    gap: em(14px) 0;
+  }
 
   .Sticker {
     transition: all 0.3s ease-in;
+  }
+
+  .Sticker1,
+  .Sticker3,
+  .Sticker5 {
+    @include ifmobile {
+      margin-right: auto;
+    }
+  }
+
+  .Sticker2,
+  .Sticker4 {
+    margin-left: auto;
+    @include ifmobile {
+      margin-left: auto;
+    }
   }
 
   .Sticker1:hover {

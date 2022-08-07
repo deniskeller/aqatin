@@ -13,6 +13,11 @@
   position: absolute !important;
   top: em(240px) !important;
   right: em(-100px) !important;
+  @include ifmobile {
+    position: relative !important;
+    top: 0 !important;
+    right: em(-25px) !important;
+  }
 }
 
 .AboutProfile_Description {

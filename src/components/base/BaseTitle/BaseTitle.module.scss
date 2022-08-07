@@ -10,10 +10,16 @@
     // @include iftablet {
     //   font-size: em(34px);
     // }
+    @include ifmobile {
+      font-size: em(34px);
+    }
   }
   &_h2 {
     font-size: em(25px);
     line-height: 152.5%;
+    @include ifmobile {
+      font-size: em(16px);
+    }
   }
   &_h3 {
     font-size: em(22px);

@@ -6,8 +6,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: em(283px);
   padding-bottom: em(240px);
+
+  @include ifmobile {
+    padding-top: em(70px);
+    padding-bottom: em(64px);
+    justify-content: center;
+    gap: em(40px) em(72px);
+  }
 
   &_Item {
     display: flex;
@@ -15,9 +23,15 @@
     align-items: center;
     width: max-content;
     --animate-delay: 0.2s;
+    @include ifmobile {
+      min-width: em(100px);
+    }
 
     .Number {
       margin-bottom: em(33px);
+      @include ifmobile {
+        margin-bottom: em(20px);
+      }
       span {
         font-size: em(100px);
         line-height: 100%;
@@ -26,11 +40,13 @@
         font-weight: 400;
         text-transform: uppercase;
         color: $yellow-bg;
+        @include ifmobile {
+          font-size: em(70px);
+        }
       }
     }
 
     .Description {
-      // max-width: em(170px);
       width: max-content;
       display: flex;
       align-items: center;
@@ -42,6 +58,11 @@
         text-transform: uppercase;
         color: $yellow-bg;
         text-align: center;
+        @include ifmobile {
+          width: 100%;
+          max-width: em(140px);
+          font-size: em(12px);
+        }
       }
     }
   }

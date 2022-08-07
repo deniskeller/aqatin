@@ -1,10 +1,14 @@
 .Sticker {
   width: max-content;
-  min-width: em(145px);
+  min-width: em(230px);
   min-height: em(64px);
-  padding: em(10px) em(35px);
+  padding: em(5px) em(10px);
   border-radius: em(10px);
   @extend %center;
+  @include ifmobile {
+    min-width: em(163px);
+    min-height: em(50px);
+  }
 
   &_Title {
     font-family: 'Montserrat';
@@ -14,5 +18,9 @@
     line-height: 152.5%;
     text-align: center;
     text-transform: uppercase;
+
+    @include ifmobile {
+      font-size: em(12px);
+    }
   }
 }

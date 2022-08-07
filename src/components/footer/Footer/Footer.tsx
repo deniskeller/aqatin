@@ -217,9 +217,7 @@ const Footer = () => {
                         <span>Thank you!</span>
                       </div>
                       <div className={styles.SuccessAlert_Subtitle}>
-                        <span>
-                          Your email was sucesfully added to our list!
-                        </span>
+                        Your email was sucesfully added to our list!
                       </div>
                     </div>
                   </>

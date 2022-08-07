@@ -6,18 +6,40 @@
   padding-top: em(76px);
   padding-bottom: em(56px);
 
+  @include ifmobile {
+    padding-top: em(38px);
+    padding-bottom: em(27px);
+  }
+
   &_Top {
     display: grid;
     grid-template-columns: em(145px) 1fr;
     grid-gap: em(129px);
     margin-bottom: em(20px);
+    @include ifmobile {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 0;
+    }
   }
 
   &_Logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
     .Logo {
       width: em(145px);
       height: em(39px);
       margin-bottom: em(5px);
+      @include ifmobile {
+        width: em(82px);
+        height: em(22px);
+        margin-bottom: em(12px);
+      }
       path {
         fill: $white;
       }
@@ -30,6 +52,10 @@
       font-style: normal;
       font-weight: 400;
       color: $yellow-text-footer;
+      @include ifmobile {
+        font-size: em(12px);
+        text-align: center;
+      }
     }
   }
 
@@ -37,15 +63,34 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @include ifmobile {
+      gap: em(20px) 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &_Item:last-child {
+      @include ifmobile {
+        position: relative;
+        top: em(-105px);
+      }
+    }
 
     &_Title {
       margin-bottom: em(24px);
+      @include ifmobile {
+        margin-bottom: em(10px);
+      }
       span {
         font-size: em(15px);
         font-style: normal;
         font-weight: 900;
         color: $yellow;
         text-transform: uppercase;
+        @include ifmobile {
+          font-size: em(12px);
+        }
       }
     }
 
@@ -56,6 +101,9 @@
     &_Li {
       line-height: 100%;
       margin-bottom: em(14px);
+      @include ifmobile {
+        margin-bottom: em(10px);
+      }
 
       &:last-child {
         margin-bottom: 0 !important;
@@ -67,6 +115,10 @@
         font-weight: 300;
         line-height: 100%;
         color: $white;
+        white-space: nowrap;
+        @include ifmobile {
+          font-size: em(12px);
+        }
         &:hover {
           color: $yellow;
         }
@@ -78,9 +130,16 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-
+    flex-wrap: wrap;
+    @include ifmobile {
+      margin-top: em(-70px);
+    }
     .Social {
       margin-right: em(149px);
+      @include ifmobile {
+        margin-right: 0;
+        width: 50%;
+      }
 
       .SocialItems {
         display: flex;
@@ -90,6 +149,10 @@
         width: 100%;
         max-width: em(145px);
         margin-bottom: em(50px);
+        @include ifmobile {
+          max-width: em(139px);
+          margin-bottom: em(26px);
+        }
         .SocialIcon {
           position: relative;
         }
@@ -97,21 +160,29 @@
         .Facebook {
           width: em(9px);
           height: em(19px);
+          @include ifmobile {
+          }
         }
 
         .Instagram {
           width: em(17px);
           height: em(18px);
+          @include ifmobile {
+          }
         }
 
         .Twitter {
           width: em(20px);
           height: em(17px);
+          @include ifmobile {
+          }
         }
 
         .Linkedin {
           width: em(18px);
           height: em(18px);
+          @include ifmobile {
+          }
         }
       }
 
@@ -122,6 +193,8 @@
         font-style: normal;
         font-weight: 400;
         color: $yellow-text-footer;
+        @include ifmobile {
+        }
         a {
           font-size: inherit;
           line-height: 120%;
@@ -141,8 +214,14 @@
       display: flex;
       flex-direction: column;
       position: relative;
+      @include ifmobile {
+        order: -1;
+        margin-bottom: em(27px);
+      }
       &_Title {
         margin-bottom: em(15px);
+        @include ifmobile {
+        }
         span {
           display: block;
           font-size: em(15px);
@@ -150,6 +229,9 @@
           font-weight: 900;
           color: $green;
           text-transform: uppercase;
+          @include ifmobile {
+            font-size: em(12px);
+          }
         }
       }
 
@@ -160,17 +242,28 @@
         .Input {
           width: em(294px);
           margin-right: em(11px);
+          @include ifmobile {
+            width: em(214px);
+            margin-right: em(9px);
+          }
           span {
             height: em(49px);
+            @include ifmobile {
+              height: em(33px);
+            }
           }
         }
 
         .Button {
           width: em(70px);
           height: em(49px);
+          @include ifmobile {
+            width: em(57px);
+            height: em(33px);
+          }
 
           .Icon {
-            width: em(29px);
+            width: em(28px);
           }
         }
       }
@@ -186,15 +279,28 @@
         animation-name: FadeIn;
         animation-duration: 2s;
         transition-timing-function: linear;
+        @include ifmobile {
+          width: em(280px);
+          height: em(59px);
+          padding: em(10px) em(16px);
+          position: relative;
+          top: 0;
+        }
 
         &_Title {
-          margin-bottom: em(15px);
+          margin-bottom: em(10px);
+          @include ifmobile {
+          }
           span {
+            display: block;
             font-size: em(15px);
             line-height: 100%;
             font-weight: 900;
             color: $green;
             text-transform: uppercase;
+            @include ifmobile {
+              font-size: em(12px);
+            }
           }
         }
 
@@ -204,6 +310,9 @@
           font-style: normal;
           font-weight: 300;
           color: $white;
+          @include ifmobile {
+            font-size: em(11px);
+          }
         }
       }
     }
@@ -214,10 +323,19 @@
       align-items: center;
       margin-left: auto;
 
+      @include ifmobile {
+        width: 45%;
+      }
+
       .Mastercard {
         width: em(44.01px);
         height: em(32.56px);
         margin-right: em(28px);
+        @include ifmobile {
+          width: em(25.55px);
+          height: em(19.16px);
+          margin-right: em(17px);
+        }
       }
 
       .Ico {
@@ -225,11 +343,20 @@
         width: em(53px);
         height: em(34px);
         margin-right: em(28px);
+        @include ifmobile {
+          width: em(30px);
+          height: em(20px);
+          margin-right: em(17px);
+        }
       }
 
       .Pci {
         width: em(91px);
         height: em(29.9px);
+        @include ifmobile {
+          width: em(53.1px);
+          height: em(17.45px);
+        }
       }
     }
   }

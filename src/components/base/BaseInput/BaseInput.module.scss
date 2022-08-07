@@ -21,6 +21,10 @@
   width: 100%;
   height: 100%;
   $size: 16px;
+  @include ifmobile {
+    $size: 12px;
+    padding: em(13px, $size) em(14px, $size) em(13px, $size) em(14px, $size);
+  }
   line-height: 100%;
   font-size: em($size);
   font-family: 'Montserrat';
@@ -50,6 +54,12 @@
   $size: 13px;
   font-size: em($size);
   padding: em(12px, $size) em(20px, $size) em(12px, $size) em(41px, $size);
+
+  @include ifmobile {
+    $size: 12px;
+    font-size: em($size);
+    padding: em(12px, $size) em(12px, $size) em(12px, $size) em(12px, $size);
+  }
 }
 
 .InputIconRight {

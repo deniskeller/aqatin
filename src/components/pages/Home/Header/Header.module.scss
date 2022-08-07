@@ -1,5 +1,8 @@
 .Padding_Top {
   padding-top: em($top-padding);
+  @include ifmobile {
+    padding-top: em(106px);
+  }
 }
 
 .Header {
@@ -11,12 +14,19 @@
     width: em(209px);
     height: em(56px);
     padding-top: em(10px);
+
+    @include ifmobile {
+      display: none;
+    }
   }
 
   &_Title {
     width: 100%;
     max-width: em(745px);
     margin-bottom: em(10px);
+    @include ifmobile {
+      margin-bottom: em(50px);
+    }
     span {
       color: $green;
     }
@@ -26,12 +36,19 @@
 .Subtitle {
   padding-left: em(284px);
   margin-bottom: em(100px);
+  @include ifmobile {
+    padding-left: 0;
+    margin-bottom: em(38px);
+  }
 
   h2 {
     font-size: em(25px);
     font-style: normal;
     font-weight: 900;
     line-height: 120%;
+    @include ifmobile {
+      font-size: em(16px);
+    }
   }
 }
 
@@ -39,12 +56,25 @@
   position: relative;
   padding-left: em(284px);
   margin-bottom: em(37px);
+  @include ifmobile {
+    padding-left: 0;
+    margin-bottom: em(114px);
+  }
+
   &_Logo_Icon {
     width: em(32.46px);
     height: em(36.83px);
     position: absolute;
     left: em(-5px);
     top: em(-40px);
+    @include ifmobile {
+      width: em(40.91px);
+      height: em(46.91px);
+      position: absolute;
+      left: em(-5px);
+      top: em(-13px);
+      transform: rotate(-18.77deg);
+    }
   }
 
   &_Logo_Text {
@@ -52,12 +82,23 @@
     left: em(31px);
     top: em(-31px);
     transform: rotate(-7.77deg);
+    @include ifmobile {
+      position: relative;
+      left: 0;
+      top: 0;
+      padding-left: em(20px);
+      margin-bottom: em(50px);
+    }
+
     p {
       font-size: em(30px);
       font-family: $font-Flood;
       font-style: italic;
       font-weight: 400;
       color: $green;
+      @include ifmobile {
+        font-size: em(16px);
+      }
     }
   }
 
@@ -65,11 +106,16 @@
     width: 100%;
     max-width: em(563px);
     margin-bottom: em(15px);
+    @include ifmobile {
+    }
     p {
       font-size: em(16px);
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 400;
+      @include ifmobile {
+        font-size: em(14px);
+      }
     }
   }
 
@@ -83,13 +129,23 @@
     &_Input {
       width: 100%;
       max-width: em(401px);
+      @include ifmobile {
+        margin-bottom: em(10px);
+      }
       span {
         height: em(61px);
+        @include ifmobile {
+          height: em(42px);
+        }
       }
     }
     &_Button {
       width: em(143px);
       height: em(62px);
+      @include ifmobile {
+        width: em(114px);
+        height: em(42px);
+      }
     }
   }
 }
@@ -98,6 +154,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   max-width: em(1066px);
   margin: 0 auto;
@@ -106,9 +163,21 @@
   margin-bottom: em(127px);
   border-bottom: 0.5px solid #000000;
 
+  @include ifmobile {
+    max-width: em(280px);
+    padding-left: 0;
+    padding-bottom: em(22px);
+    margin-bottom: em(60px);
+  }
+
   &_Title {
     max-width: em(190px);
     margin-right: em(60px);
+    @include ifmobile {
+      max-width: em(180px);
+      margin-right: 0;
+      margin-bottom: em(16px);
+    }
     p {
       font-size: em(11px);
       line-height: 152.5%;
@@ -116,6 +185,9 @@
       font-style: normal;
       font-weight: 400;
       color: $black;
+      @include ifmobile {
+        font-size: em(12px);
+      }
     }
   }
 
@@ -132,29 +204,53 @@
       width: em(85px);
       height: em(58px);
       margin-right: em(17px);
+      @include ifmobile {
+        width: em(38px);
+        height: em(26px);
+        margin-right: em(12px);
+      }
     }
 
     .Revenue_and_customs {
       width: em(100px);
       height: em(59px);
       margin-right: em(17px);
+      @include ifmobile {
+        width: em(45px);
+        height: em(26px);
+        margin-right: em(12px);
+      }
     }
 
     .Fca {
       width: em(91px);
       height: em(30px);
       margin-right: em(10px);
+      @include ifmobile {
+        width: em(48px);
+        height: em(16px);
+        margin-right: em(12px);
+      }
     }
 
     .Bank_of_ireland {
       width: em(103px);
       height: em(25px);
       margin-right: em(17px);
+      @include ifmobile {
+        width: em(67px);
+        height: em(17px);
+        margin-right: em(12px);
+      }
     }
 
     .Canada {
       width: em(88.02px);
       height: em(20.98px);
+      @include ifmobile {
+        width: em(41.7px);
+        height: em(9.94px);
+      }
     }
   }
 }

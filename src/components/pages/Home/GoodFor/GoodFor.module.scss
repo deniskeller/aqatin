@@ -5,19 +5,34 @@
   padding-top: em(183px);
   padding-bottom: em(122px);
 
+  @include ifmobile {
+    padding-top: em(60px);
+    padding-bottom: em(72px);
+  }
+
   .Description {
     max-width: em(964px);
-    margin-bottom: em(42px);
+    margin-bottom: em(40px);
   }
 
   .Title {
     margin-bottom: em(55px);
+    @include ifmobile {
+      margin-bottom: em(32px);
+    }
   }
 
   .Stickers {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include ifmobile {
+      flex-direction: column;
+      justify-content: normal;
+      margin-left: 0;
+      gap: em(14px) 0;
+    }
 
     .Sticker {
       transition: all 0.3s ease-in;
@@ -29,6 +44,10 @@
     position: relative;
     left: em(68px);
     margin-bottom: em(32px);
+    @include ifmobile {
+      left: 0;
+      margin-bottom: em(14px);
+    }
     .Sticker1:hover {
       transform: rotate(5deg);
     }
@@ -37,6 +56,12 @@
     }
     .Sticker3:hover {
       transform: rotate(5deg);
+    }
+
+    .Sticker2 {
+      @include ifmobile {
+        margin-left: auto;
+      }
     }
   }
 
@@ -44,6 +69,9 @@
     max-width: em(727px);
     position: relative;
     left: em(218px);
+    @include ifmobile {
+      left: 0;
+    }
     .Sticker1:hover {
       transform: rotate(5deg);
     }
@@ -52,6 +80,13 @@
     }
     .Sticker3:hover {
       transform: rotate(5deg);
+    }
+
+    .Sticker1,
+    .Sticker3 {
+      @include ifmobile {
+        margin-left: auto;
+      }
     }
   }
 }
