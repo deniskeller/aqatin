@@ -28,6 +28,14 @@ path.dot {
   fill: $green !important;
 }
 
+.IconBlack path.text {
+  fill: $black !important;
+}
+
+.IconWhite path.text {
+  fill: $white !important;
+}
+
 .ComingSoon_Button {
   --animate-delay: 0.5s !important;
 }

@@ -12,6 +12,7 @@ interface Props {
   disabled?: boolean;
   className?: string;
   loading?: boolean;
+  style?: object;
 }
 
 const BaseButton: React.FC<Props> = ({
@@ -23,12 +24,14 @@ const BaseButton: React.FC<Props> = ({
   disabled = false,
   className = '',
   loading = false,
+  style,
 }) => {
   return (
     <button
       onClick={onClick}
       disabled={disabled}
       className={`${className} ${styles.Button} ${styles['Button_' + type]}`}
+      style={style}
     >
       {loading ? (
         <span className={styles.IconLoader}>

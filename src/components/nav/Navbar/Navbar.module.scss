@@ -12,10 +12,6 @@
     width: em(105px);
     height: em(25px);
 
-    // path {
-    //   fill: $white;
-    // }
-
     @include ifdesktop {
       display: none !important;
     }
@@ -33,7 +29,7 @@
     width: 100%;
     margin: 0 auto;
     height: 2px;
-    background: $white;
+    background: none;
     border-bottom: 0.5px solid $black;
     transform: translate(50%, -50%);
     z-index: 1000;

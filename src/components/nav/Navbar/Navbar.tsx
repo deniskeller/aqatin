@@ -16,6 +16,8 @@ const Navbar: React.FC<Props> = () => {
   const router = useRouter();
   const [visible, setVisible] = React.useState(false);
   const [links, setLinks] = React.useState<Links[]>([]);
+  const [color, setColor] = React.useState<string>('#000');
+  const [burgerBg, setBurgerBg] = React.useState<string>('#000');
 
   React.useEffect(() => {
     const links1 = [
@@ -24,7 +26,7 @@ const Navbar: React.FC<Props> = () => {
         title: 'Personal Account',
       },
       {
-        href: '/cusiness_account',
+        href: '/business_account',
         title: 'Business Account',
       },
       {
@@ -42,7 +44,7 @@ const Navbar: React.FC<Props> = () => {
         title: 'Personal Account',
       },
       {
-        href: '/cusiness_account',
+        href: '/business_account',
         title: 'Business Account',
       },
       {
@@ -50,12 +52,39 @@ const Navbar: React.FC<Props> = () => {
         title: 'Company',
       },
     ];
+
+    //условие для появления ссылки home
     if (router.pathname != '/') {
       setLinks(links2);
     } else {
       setLinks(links1);
     }
-  }, [router.pathname]);
+
+    //условие для смены цветом ссылок меню
+    if (
+      router.pathname == '/personal_account' ||
+      router.pathname == '/business_account' ||
+      router.pathname == '/budget_planning' ||
+      router.pathname == '/remuneration_planning' ||
+      router.pathname == '/culture' ||
+      router.pathname == '/leadership' ||
+      router.pathname == '/affiliates' ||
+      router.pathname == '/influencers' ||
+      router.pathname == '/help_center' ||
+      router.pathname == '/security'
+    ) {
+      setBurgerBg('#fff');
+      setColor('#fff');
+    } else {
+      setBurgerBg('#000');
+      setColor('#000');
+    }
+
+    if (visible) {
+      setColor('#fff');
+      setBurgerBg('#fff');
+    }
+  }, [router.pathname, visible, burgerBg]);
 
   return (
     <div className={styles.Container}>
@@ -68,7 +97,9 @@ const Navbar: React.FC<Props> = () => {
             <BaseIcon
               viewBox="0 0 209 56"
               icon={ALL_ICONS.LOGO}
-              className={styles.Icon}
+              className={`${styles.Icon} ${
+                color == '#000' ? 'IconBlack' : 'IconWhite'
+              }`}
             />
           </div>
         </a>
@@ -80,14 +111,17 @@ const Navbar: React.FC<Props> = () => {
         }`}
         onClick={() => setVisible(!visible)}
       >
+        <span style={{ background: burgerBg }}></span>
+        <span style={{ background: burgerBg }}></span>
+        <span style={{ background: burgerBg }}></span>
+        {/* <span style={{ background: !visible ? '#000' : '#fff' }}></span>
         <span style={{ background: !visible ? '#000' : '#fff' }}></span>
-        <span style={{ background: !visible ? '#000' : '#fff' }}></span>
-        <span style={{ background: !visible ? '#000' : '#fff' }}></span>
+        <span style={{ background: !visible ? '#000' : '#fff' }}></span> */}
       </div>
 
       <div
         className={styles.Border}
-        style={{ display: !visible ? 'block' : 'none' }}
+        style={{ display: !visible ? 'block' : 'none', borderColor: color }}
       ></div>
 
       <div
@@ -101,6 +135,7 @@ const Navbar: React.FC<Props> = () => {
                 title={link.title}
                 index={index}
                 key={index}
+                color={color}
               />
             );
           })}
@@ -112,6 +147,7 @@ const Navbar: React.FC<Props> = () => {
             type="link"
             size="mini"
             className={styles.Btn_Signup}
+            style={{ color: color }}
           />
 
           <BaseButton title="Log in" size="mini" className={styles.Btn_Login} />

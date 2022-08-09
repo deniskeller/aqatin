@@ -1,0 +1,67 @@
+.Wrapper {
+  background: $green;
+  padding: em(135px) 0;
+
+  @include ifmobile {
+    padding: em(77px) 0;
+  }
+}
+.Capabilities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &_Item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: em(421px);
+    margin-bottom: em(50px);
+    @include ifmobile {
+      margin-bottom: em(67px);
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &_Items:first-child {
+    @include ifmobile {
+      margin-bottom: em(67px);
+    }
+  }
+
+  &_Number {
+    margin-right: em(36px);
+    @include ifmobile {
+      margin-right: em(33px);
+    }
+    div {
+      font-size: em(119px);
+      font-family: $font-Gobold;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $yellow;
+      @include ifmobile {
+        font-size: em(70px);
+      }
+    }
+  }
+
+  &_Description {
+    font-size: em(15px);
+    font-family: $font-Arial;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 152.5%;
+    text-transform: uppercase;
+    color: $white;
+    @include ifmobile {
+      font-size: em(12px);
+    }
+  }
+}

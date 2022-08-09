@@ -6,6 +6,7 @@ import {
   BaseTitle,
 } from '@base/index';
 import { ALL_ICONS } from '@constants/icons';
+import { PaddingTop } from '@content/index';
 import Image from 'next/image';
 import React from 'react';
 import styles from './Header.module.scss';
@@ -15,7 +16,7 @@ const Header = () => {
   return (
     <>
       <BaseContainer>
-        <div className={styles.Padding_Top}></div>
+        <PaddingTop />
 
         <div className="animate__animated animate__fadeIn animate__delay">
           <div className={styles.Header}>

@@ -7,9 +7,15 @@ interface Props {
   href: string;
   title: string;
   index?: number;
+  color: string;
 }
 
-const NavbarLink: React.FC<Props> = ({ href, title, index }) => {
+const NavbarLink: React.FC<Props> = ({
+  href,
+  title,
+  index,
+  color = '#000',
+}) => {
   const router = useRouter();
 
   return (
@@ -21,6 +27,7 @@ const NavbarLink: React.FC<Props> = ({ href, title, index }) => {
               ? styles.Active
               : ''
           } ${styles.Link}`}
+          style={{ color: color }}
         >
           {title}
         </a>
