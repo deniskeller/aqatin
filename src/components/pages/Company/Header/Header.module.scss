@@ -1,0 +1,69 @@
+.Header {
+  position: relative;
+  padding-bottom: em(155px);
+
+  @include ifmobile {
+    padding-bottom: em(60px);
+  }
+
+  &_IconStar {
+    position: absolute;
+    width: em(72.04px);
+    height: em(69.83px);
+    top: em(-195px);
+    left: em(295px);
+    @include ifmobile {
+      top: auto;
+      left: auto;
+      bottom: em(-90px);
+      right: 0;
+    }
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+    }
+  }
+
+  &_Description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &_Icon {
+      display: inline-block;
+      position: relative;
+      width: em(22px);
+      height: em(18px);
+      @include ifmobile {
+      }
+    }
+  }
+
+  .Description_Left,
+  .Header_Description_Right {
+    position: relative;
+    max-width: em(458px);
+    @include ifmobile {
+      max-width: em(268px);
+    }
+    .Button {
+      width: em(184px);
+      height: em(62px);
+      margin-top: em(33px);
+      @include ifmobile {
+        width: em(114px);
+        height: em(42px);
+        margin-top: em(40px);
+      }
+    }
+  }
+
+  .Description_Left {
+    @include ifmobile {
+      margin-bottom: em(142px);
+    }
+  }
+}

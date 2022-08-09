@@ -1,0 +1,42 @@
+.About {
+  position: relative;
+  min-height: em(720px);
+  background: url('/images/image/company_bg.png') center;
+  background-size: cover;
+
+  @include ifmobile {
+    min-height: em(640px);
+  }
+
+  &_Shape {
+    position: absolute;
+    top: em(181px);
+    right: em(-550px);
+    background: $yellow-bg;
+    border-radius: em(10px);
+    width: em(1417px);
+    min-height: em(308px);
+    padding: em(72px) em(93px) em(60px);
+    @include ifmobile {
+      width: em(310px);
+      min-height: em(277px);
+      padding: em(47px) em(65px) em(45px) em(35px);
+      top: em(181px);
+      right: em(-28px);
+    }
+
+    .Text {
+      max-width: em(658px);
+      p {
+        font-size: em(25px);
+        font-style: normal;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $green;
+        @include ifmobile {
+          font-size: em(16px);
+        }
+      }
+    }
+  }
+}
