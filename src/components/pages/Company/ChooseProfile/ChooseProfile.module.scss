@@ -55,6 +55,12 @@
         color: $green-bg;
         position: relative;
         @extend %center;
+
+        &:hover {
+          .Account_Name_Shape {
+            transform: rotate(5deg);
+          }
+        }
         @include ifmobile {
           width: em(109px);
           height: em(69px);
@@ -80,9 +86,6 @@
           @extend %fullsize;
           background: $yellow-bg;
           transition: all 0.3s ease-in;
-          &:hover {
-            transform: rotate(5deg);
-          }
         }
       }
 
