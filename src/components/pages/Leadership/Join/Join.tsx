@@ -21,6 +21,7 @@ const Join = () => {
                   src="/images/image/leadership_image.png"
                   layout="fill"
                   alt={'Images'}
+                  priority
                 />
               </div>
             </div>
