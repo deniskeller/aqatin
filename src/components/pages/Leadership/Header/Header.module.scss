@@ -1,0 +1,66 @@
+.Wrapper {
+  position: relative;
+  background: url('/images/image/leadership_bg.png') center;
+  background-size: cover;
+}
+
+.Overlay {
+  @extend %fullsize;
+  background: $black;
+  opacity: 0.45;
+}
+
+.Header {
+  position: relative;
+  padding-bottom: em(243px);
+
+  @include ifmobile {
+    padding-bottom: em(125px);
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+      margin-bottom: em(25px);
+    }
+  }
+
+  &_Description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .Text {
+      max-width: em(458px);
+
+      .Icon {
+        position: relative;
+        top: em(2px);
+        display: inline-block;
+        width: em(20px);
+        height: em(20px);
+      }
+    }
+  }
+
+  &_IconStar {
+    position: absolute;
+    width: em(67.55px);
+    height: em(73.01px);
+    right: em(-25px);
+    bottom: em(76px);
+    @include ifmobile {
+      width: em(51.27px);
+      height: em(55.32px);
+      right: em(7px);
+      bottom: em(60px);
+    }
+  }
+
+  .Br {
+    @include ifdesktop {
+      display: none;
+    }
+  }
+}

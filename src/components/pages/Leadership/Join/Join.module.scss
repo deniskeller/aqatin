@@ -1,0 +1,52 @@
+.Wrapper {
+  background: $black-bg;
+}
+
+.Join {
+  padding: em(150px) 0;
+  position: relative;
+
+  @include ifmobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: em(75px) 0;
+  }
+
+  &_Description {
+    max-width: em(456px);
+    margin-bottom: em(118px);
+
+    @include ifmobile {
+      margin-bottom: em(53px);
+    }
+
+    &_Image {
+      position: absolute;
+      right: em(-62px);
+      top: em(151px);
+      width: em(463px);
+      height: em(462px);
+      @include ifmobile {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: em(272px);
+        height: em(295px);
+        margin-top: em(60px);
+      }
+    }
+  }
+
+  &_Button {
+    width: em(205px);
+    height: em(62px);
+    margin-bottom: em(26px);
+    @include ifmobile {
+      width: em(114px);
+      height: em(42px);
+      margin: 0 auto;
+      margin-bottom: em(20px);
+    }
+  }
+}

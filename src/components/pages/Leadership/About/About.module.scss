@@ -1,0 +1,163 @@
+.Wrapper {
+  background: $green;
+  position: relative;
+}
+
+.About {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: em(132px);
+  padding-bottom: em(370px);
+
+  @include ifmobile {
+    padding-top: em(60px);
+    padding-bottom: em(128px);
+  }
+
+  &_Item {
+    @extend %center;
+
+    border: 2px solid $yellow;
+    border-radius: em(10px);
+    position: relative;
+
+    &_Count {
+      font-family: $font-Gobold;
+      font-style: normal;
+      font-weight: 400;
+      font-size: em(119px);
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $yellow;
+      @include ifmobile {
+        font-size: em(70px);
+      }
+    }
+
+    &_Arrow {
+      position: absolute;
+      bottom: em(-100px);
+      width: em(70px);
+      @include ifmobile {
+        width: em(60px);
+      }
+    }
+
+    &_Description {
+      position: absolute;
+      bottom: 0;
+      p {
+        font-family: $font-Flood;
+        font-style: italic;
+        font-weight: 400;
+        font-size: em(20px);
+        line-height: 120%;
+        text-align: center;
+        color: $white;
+        @include ifmobile {
+          font-size: em(16px);
+        }
+      }
+    }
+  }
+
+  &_Item1 {
+    width: em(331px);
+    height: em(206px);
+
+    @include ifmobile {
+      width: em(157px);
+      height: em(121px);
+      margin-bottom: em(50px);
+    }
+    .About_Item_Arrow {
+      transform: scale(-1, 1) rotateZ(-20deg);
+      @include ifmobile {
+        transform: scale(1, 1) rotateZ(-115deg);
+        bottom: auto;
+        top: em(-10px);
+        right: em(-85px);
+      }
+    }
+    .About_Item_Description {
+      max-width: em(178px);
+      bottom: em(-160px);
+      right: em(15px);
+      transform: rotate(-7.77deg);
+      @include ifmobile {
+        bottom: em(25px);
+        right: em(-140px);
+        max-width: em(104px);
+      }
+    }
+  }
+
+  &_Item2 {
+    width: em(232px);
+    height: em(206px);
+    position: relative;
+    top: em(42px);
+    right: em(15px);
+    @include ifmobile {
+      width: em(124px);
+      height: em(121px);
+      top: auto;
+      right: auto;
+      margin-left: auto;
+      margin-bottom: em(75px);
+    }
+    .About_Item_Arrow {
+      transform: scale(-1, 1) rotateZ(-45deg);
+      right: em(60px);
+      @include ifmobile {
+        transform: scale(-1, 1) rotateZ(-112deg);
+        right: em(150px);
+        bottom: em(65px);
+      }
+    }
+    .About_Item_Description {
+      max-width: em(228.16px);
+      transform: rotate(-5.6deg);
+      bottom: em(-230px);
+      right: em(-35px);
+      @include ifmobile {
+        max-width: em(147px);
+        bottom: em(-50px);
+        right: auto;
+        left: em(-175px);
+      }
+    }
+  }
+
+  &_Item3 {
+    width: em(331px);
+    height: em(206px);
+    @include ifmobile {
+      width: em(187px);
+      height: em(121px);
+    }
+    .About_Item_Arrow {
+      transform: rotateZ(-20deg);
+      @include ifmobile {
+        width: em(75px);
+        bottom: em(20px);
+        right: em(-95px);
+        transform: rotateZ(-90deg);
+      }
+    }
+    .About_Item_Description {
+      max-width: em(228.16px);
+      transform: rotate(13.06deg);
+      bottom: em(-185px);
+      left: 0px;
+      @include ifmobile {
+        max-width: em(114px);
+        bottom: em(-100px);
+        left: auto;
+        right: em(-112px);
+      }
+    }
+  }
+}
