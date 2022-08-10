@@ -49,7 +49,7 @@ const navbar_list = [
     title: 'help',
     list: [
       { name: 'Help Center', href: '/coming_soon' },
-      { name: 'Security', href: '/coming_soon' },
+      { name: 'Security', href: '/security' },
       { name: 'Developer APIs', href: '/coming_soon' },
     ],
   },

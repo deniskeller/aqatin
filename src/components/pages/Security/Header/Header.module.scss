@@ -1,0 +1,46 @@
+.Wrapper {
+  background: $black-bg;
+}
+
+.Header {
+  padding-bottom: em(155px);
+  @include ifmobile {
+    padding-bottom: em(77px);
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+  }
+
+  &_Description {
+    max-width: em(458px);
+    @include ifmobile {
+      max-width: em(270px);
+      margin-bottom: em(54px);
+    }
+  }
+
+  &_Description_Icon {
+    position: relative;
+    top: em(2px);
+    display: inline-block;
+    width: em(18px);
+    height: em(18px);
+  }
+
+  &_Image {
+    position: absolute;
+    right: em(-60px);
+    top: em($top-padding);
+    width: em(462px);
+    height: em(450px);
+
+    @include ifmobile {
+      position: relative;
+      right: 0;
+      top: 0;
+      width: em(274px);
+      height: em(276px);
+    }
+  }
+}
