@@ -1,0 +1,74 @@
+.Wrapper {
+  background: $green;
+}
+
+.About {
+  position: relative;
+  padding-top: em(182px);
+  padding-bottom: em(88px);
+  display: flex;
+  flex-direction: column;
+
+  @include ifmobile {
+    padding-top: em(75px);
+    padding-bottom: em(120px);
+  }
+
+  &_Description,
+  &_Question,
+  &_Answer {
+    max-width: em(458px);
+  }
+
+  &_Description {
+    margin-bottom: em(49px);
+    position: relative;
+    span {
+      color: $yellow;
+    }
+    @include ifmobile {
+      margin-bottom: em(180px);
+    }
+    &_Icon {
+      position: relative;
+      top: em(2px);
+      left: em(4px);
+      display: inline-block;
+      width: em(25px);
+      height: em(18px);
+      @include ifmobile {
+        position: absolute;
+        left: auto;
+        top: em(25px);
+        right: em(-5px);
+      }
+    }
+  }
+
+  &_Question,
+  &_Answer {
+    width: em(458px);
+    margin-left: auto;
+  }
+
+  &_Question {
+    margin-bottom: em(30px);
+    @include ifmobile {
+      width: em(177px);
+      margin-left: 0;
+      margin-bottom: em(35px);
+    }
+  }
+
+  &_IconStasr {
+    position: absolute;
+    top: em(205px);
+    right: em(136px);
+    width: em(68px);
+    height: em(73px);
+    @include ifmobile {
+      top: em(285px);
+      right: em(24px);
+    }
+  }
+}

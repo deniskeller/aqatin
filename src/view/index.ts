@@ -6,3 +6,4 @@ export { default as BusinessAccount } from "./BusinessAccount/BusinessAccount";
 export { default as Company } from "./Company/Company";
 export { default as Security } from "./Security/Security";
 export { default as Leadership } from "./Leadership/Leadership";
+export { default as Culture } from "./Culture/Culture";

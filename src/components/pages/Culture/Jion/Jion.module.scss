@@ -1,0 +1,42 @@
+.Wrapper {
+  position: relative;
+  background: url('/images/image/culture_bg.png') center;
+  background-size: cover;
+}
+
+.Overlay {
+  @extend %fullsize;
+  background: $black;
+  opacity: 0.67;
+}
+
+.Jion {
+  min-height: em(518px);
+  padding-top: em(218px);
+  padding-bottom: em(160px);
+  text-align: center;
+
+  @include ifmobile {
+    min-height: em(306px);
+    padding-top: em(80px);
+    padding-bottom: em(90px);
+  }
+
+  &_Text {
+    margin-bottom: em(50px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Button {
+    width: em(205px);
+    height: em(62px);
+    margin: 0 auto;
+
+    @include ifmobile {
+      width: em(114px);
+      height: em(42px);
+    }
+  }
+}

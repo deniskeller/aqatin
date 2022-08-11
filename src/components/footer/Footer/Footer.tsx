@@ -39,7 +39,7 @@ const navbar_list = [
       { name: 'About', href: '/coming_soon' },
       { name: 'Contacts', href: '/coming_soon' },
       { name: 'Careers', href: '/coming_soon' },
-      { name: 'Culture', href: '/coming_soon' },
+      { name: 'Culture', href: '/culture' },
       { name: 'Leadership', href: '/leadership' },
       { name: 'Affiliates', href: '/coming_soon' },
       { name: 'Influencers', href: '/coming_soon' },
