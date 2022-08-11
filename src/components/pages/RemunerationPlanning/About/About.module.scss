@@ -79,10 +79,10 @@
           margin-bottom: em(11px);
         }
         &:nth-child(odd):hover {
-          transform: rotate(5deg);
+          transform: rotate(-5deg);
         }
         &:nth-child(even):hover {
-          transform: rotate(-5deg);
+          transform: rotate(5deg);
         }
       }
     }

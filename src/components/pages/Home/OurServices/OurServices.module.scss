@@ -58,6 +58,9 @@
 
   .Sticker {
     transition: all 0.3s ease-in;
+    @include ifmobile {
+      min-width: em(163px);
+    }
   }
 
   .Sticker1,
