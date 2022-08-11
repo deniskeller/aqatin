@@ -1,0 +1,37 @@
+.Wrapper {
+  position: relative;
+  background: url('/images/image/remuneration_planning_bg.png') center;
+  background-size: cover;
+}
+
+.Jion {
+  min-height: em(394px);
+  padding-top: em(145px);
+  padding-bottom: em(80px);
+  text-align: center;
+
+  @include ifmobile {
+    min-height: em(306px);
+    padding-top: em(60px);
+    padding-bottom: em(60px);
+  }
+
+  &_Text {
+    max-width: em(985px);
+    margin-bottom: em(55px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Button {
+    width: em(205px);
+    height: em(62px);
+    margin: 0 auto;
+
+    @include ifmobile {
+      width: em(114px);
+      height: em(42px);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.Wrapper {
+  background: $black-bg;
+}
+
+.Header {
+  padding-bottom: em(187px);
+  @include ifmobile {
+    padding-bottom: em(196px);
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+      h1 {
+        font-size: em(30px);
+      }
+    }
+  }
+
+  &_Description {
+    max-width: em(458px);
+    position: relative;
+    @include ifmobile {
+      margin-bottom: em(37px);
+    }
+
+    &_Icon {
+      position: absolute;
+      bottom: em(-5px);
+      width: em(30px);
+      height: em(30px);
+      @include ifmobile {
+        bottom: 0;
+        width: em(25px);
+        height: em(25px);
+      }
+    }
+  }
+
+  &_Image {
+    position: absolute;
+    right: em(-60px);
+    top: em($top-padding);
+    width: em(477px);
+    height: em(433.03px);
+    svg {
+      height: 100%;
+    }
+
+    @include ifmobile {
+      position: relative;
+      right: 0;
+      top: 0;
+      width: em(272px);
+      height: em(270.41px);
+    }
+  }
+}

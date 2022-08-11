@@ -1,0 +1,127 @@
+.Wrapper {
+  background: $green;
+}
+
+.About {
+  position: relative;
+  padding-top: em(182px);
+  padding-bottom: em(116px);
+
+  @include ifmobile {
+    padding-top: em(60px);
+    padding-bottom: em(67px);
+  }
+
+  &_TextContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  &_Description {
+    max-width: em(458px);
+    position: relative;
+    span {
+      color: $yellow;
+    }
+    &_Icon {
+      position: relative;
+      top: em(4px);
+      display: inline-block;
+      width: em(20px);
+      height: em(20px);
+    }
+  }
+
+  &_IconStasr {
+    position: absolute;
+    left: 0;
+    bottom: em(-200px);
+    width: em(68px);
+    height: em(73px);
+    @include ifmobile {
+      width: em(51.24px);
+      height: em(53.35px);
+      left: auto;
+      right: em(-10px);
+      top: em(200px);
+    }
+  }
+
+  &_StickersContent {
+    @include ifmobile {
+      margin-top: em(30px);
+    }
+    .Stickers {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      margin-bottom: em(20px);
+
+      @include ifmobile {
+        justify-content: space-between;
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .Sticker {
+        margin-left: em(25px);
+        transition: all 0.3s ease-in;
+
+        @include ifmobile {
+          margin-left: 0;
+          margin-bottom: em(11px);
+        }
+        &:nth-child(odd):hover {
+          transform: rotate(5deg);
+        }
+        &:nth-child(even):hover {
+          transform: rotate(-5deg);
+        }
+      }
+    }
+
+    .Stickers1 {
+      margin-right: em(33px);
+      @include ifmobile {
+        margin-right: 0;
+      }
+    }
+
+    .Stickers2 {
+      margin-right: em(43px);
+      @include ifmobile {
+        margin-right: 0;
+        .Sticker1 {
+          width: 85%;
+        }
+        .Sticker2,
+        .Sticker3 {
+          width: 48%;
+        }
+      }
+    }
+
+    .Stickers3 {
+      margin-right: em(137px);
+      @include ifmobile {
+        margin-right: 0;
+        .Sticker1 {
+          width: 85%;
+          margin: 0 auto;
+          margin-bottom: em(11px);
+        }
+        .Sticker2 {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

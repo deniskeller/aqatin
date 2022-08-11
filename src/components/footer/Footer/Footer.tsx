@@ -22,7 +22,7 @@ const navbar_list = [
       { name: 'Funds Management', href: '/coming_soon' },
       { name: 'Budget Planning', href: '/coming_soon' },
       { name: 'Loyalty Programs', href: '/coming_soon' },
-      { name: 'Remuneration Planning', href: '/coming_soon' },
+      { name: 'Remuneration Planning', href: '/remuneration_planning' },
     ],
   },
   {
