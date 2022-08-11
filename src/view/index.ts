@@ -8,3 +8,4 @@ export { default as Security } from "./Security/Security";
 export { default as Leadership } from "./Leadership/Leadership";
 export { default as Culture } from "./Culture/Culture";
 export { default as RemunerationPlanning } from "./RemunerationPlanning/RemunerationPlanning";
+export { default as FundsManagement } from "./FundsManagement/FundsManagement";

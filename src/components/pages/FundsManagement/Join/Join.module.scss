@@ -1,0 +1,91 @@
+.Wrapper {
+  position: relative;
+  background: url('/images/image/funds_manage_bg.png') center;
+  background-size: cover;
+}
+
+.Overlay {
+  @extend %fullsize;
+  background: $black;
+  opacity: 0.57;
+}
+
+.Shape {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: em(694.32px);
+  height: em(116.15px);
+  left: em(-285px);
+  top: em(-65px);
+  background: $yellow-bg;
+  border-radius: em(10px);
+  transform: rotate(-7.18deg);
+  padding: em(5px) em(40px) em(5px) em(328px);
+  @include ifmobile {
+    width: em(261.41px);
+    height: em(89.46px);
+    left: em(-25px);
+    top: em(-62px);
+    padding: em(24px) em(10px) em(10px) em(60px);
+  }
+
+  p {
+    font-family: $font-Flood;
+    font-style: italic;
+    font-weight: 400;
+    font-size: em(33px);
+    line-height: 152.5%;
+    text-transform: uppercase;
+    color: $green;
+    @include ifmobile {
+      font-size: em(16px);
+    }
+  }
+}
+
+.Join {
+  min-height: em(274px);
+  padding-top: em(100px);
+  padding-bottom: em(74px);
+  text-align: center;
+
+  @include ifmobile {
+    padding-top: em(75px);
+    padding-bottom: em(85px);
+  }
+
+  &_Text {
+    max-width: em(480px);
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: em(64px);
+    @include ifmobile {
+      max-width: em(228px);
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_ArrowIcon {
+    display: block;
+    width: em(70px);
+    position: absolute;
+    bottom: em(-90px);
+    right: em(50px);
+    @include ifmobile {
+      display: none;
+    }
+  }
+
+  &_Button {
+    width: em(205px);
+    height: em(62px);
+    margin: 0 auto;
+
+    @include ifmobile {
+      width: em(158px);
+      height: em(42px);
+    }
+  }
+}

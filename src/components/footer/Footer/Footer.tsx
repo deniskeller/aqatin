@@ -19,7 +19,7 @@ const navbar_list = [
   {
     title: 'control',
     list: [
-      { name: 'Funds Management', href: '/coming_soon' },
+      { name: 'Funds Management', href: '/funds_management' },
       { name: 'Budget Planning', href: '/coming_soon' },
       { name: 'Loyalty Programs', href: '/coming_soon' },
       { name: 'Remuneration Planning', href: '/remuneration_planning' },
