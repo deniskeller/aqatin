@@ -1,0 +1,53 @@
+.Wrapper {
+  position: relative;
+  background: url('/images/image/loyalty_programs_bg.png') center;
+  background-size: cover;
+}
+
+.Overlay {
+  @extend %fullsize;
+  background: #020202;
+  opacity: 0.43;
+}
+
+.About {
+  padding-top: em(139px);
+  padding-bottom: em(70px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @include ifmobile {
+    padding-top: em(60px);
+    padding-bottom: em(30px);
+  }
+
+  &_Title {
+    text-align: center;
+    max-width: em(540px);
+    margin: 0 auto;
+    margin-bottom: em(90px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Icon {
+    display: inline-block;
+    width: em(18px);
+    height: em(18px);
+    position: relative;
+    top: em(3px);
+  }
+
+  &_Description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &_Item {
+      max-width: em(458px);
+    }
+  }
+}

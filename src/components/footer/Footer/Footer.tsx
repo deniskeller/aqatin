@@ -21,7 +21,7 @@ const navbar_list = [
     list: [
       { name: 'Funds Management', href: '/funds_management' },
       { name: 'Budget Planning', href: '/coming_soon' },
-      { name: 'Loyalty Programs', href: '/coming_soon' },
+      { name: 'Loyalty Programs', href: '/loyalty_programs' },
       { name: 'Remuneration Planning', href: '/remuneration_planning' },
     ],
   },

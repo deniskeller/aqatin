@@ -1,0 +1,53 @@
+.Header {
+  position: relative;
+  padding-bottom: em(72px);
+  width: 100%;
+
+  @include ifmobile {
+    padding-bottom: em(100px);
+  }
+
+  &_Image {
+    position: absolute;
+    width: em(444px);
+    height: em(499px);
+    top: em(-20px);
+    right: em(-60px);
+    @include ifmobile {
+      position: relative;
+      width: em(279px);
+      height: em(299px);
+      top: auto;
+      right: auto;
+      margin: 0 auto;
+    }
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: em(458px);
+    @include ifmobile {
+      margin-bottom: em(40px);
+    }
+
+    &_Icon {
+      display: inline-block;
+      position: relative;
+      top: em(3px);
+      width: em(18px);
+      height: em(18px);
+      @include ifmobile {
+      }
+    }
+  }
+}

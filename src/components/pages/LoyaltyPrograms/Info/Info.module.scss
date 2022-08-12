@@ -1,0 +1,80 @@
+.Wrapper {
+  background: $green;
+}
+
+.Info {
+  padding-top: em(128px);
+  padding-bottom: em(185px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+
+  @include ifmobile {
+    padding-top: em(60px);
+    padding-bottom: em(60px);
+  }
+
+  &_Count {
+    width: em(363px);
+    height: em(393px);
+    border: 2px solid #e8e268;
+    border-radius: em(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 em(43px);
+
+    @include ifmobile {
+      width: em(272px);
+      height: em(258px);
+      padding: 0 em(30px);
+      margin-bottom: em(60px);
+    }
+
+    &_Value {
+      margin-bottom: em(40px);
+      @include ifmobile {
+        margin-bottom: em(30px);
+      }
+      span {
+        font-size: em(119px);
+        font-family: $font-Gobold;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $yellow;
+        @include ifmobile {
+          font-size: em(70px);
+        }
+      }
+    }
+
+    &_Description {
+      font-style: normal;
+      font-weight: 900;
+      font-size: em(15px);
+      line-height: 152.5%;
+      color: $white;
+      text-transform: uppercase;
+      @include ifmobile {
+        font-size: em(12px);
+      }
+    }
+  }
+
+  &_Description {
+    max-width: em(622px);
+
+    .Button {
+      width: em(205px);
+      height: em(62px);
+      @include ifmobile {
+        width: em(114px);
+        height: em(42px);
+      }
+    }
+  }
+}
