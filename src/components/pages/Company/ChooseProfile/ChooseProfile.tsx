@@ -10,7 +10,7 @@ const ChooseProfile = () => {
         <BaseContainer>
           <div className={styles.ChooseProfile}>
             <div className={styles.ChooseProfile_Title}>
-              <BaseTitle type="h2" color="#fff">
+              <BaseTitle type="h3" color="#fff">
                 CHOOSE THE PROFILE
               </BaseTitle>
             </div>

@@ -22,7 +22,7 @@ const GoodFor = () => {
 
             <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce>
               <div className={styles.Title}>
-                <BaseTitle color="#1B692C" type="h2">
+                <BaseTitle color="#1B692C" type="h3">
                   GOOD FOR
                 </BaseTitle>
               </div>

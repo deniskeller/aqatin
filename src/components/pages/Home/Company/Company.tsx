@@ -13,13 +13,16 @@ const Company = () => {
             <div className={styles.Company_Aboutinfo}>
               <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce>
                 <div className={styles.Title}>
-                  <BaseTitle color="#1B692C" type="h2">
+                  <BaseTitle color="#1B692C" type="h3">
                     COMPANY
                   </BaseTitle>
                 </div>
               </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__fadeIn animate__delay-2s" animateOnce>
+              <AnimationOnScroll
+                animateIn="animate__fadeIn animate__delay-2s"
+                animateOnce
+              >
                 <div className={styles.Description}>
                   <BaseText color="#948F8F">
                     Aqatin is a payment system which was created specifically

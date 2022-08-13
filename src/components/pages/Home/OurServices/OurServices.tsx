@@ -13,7 +13,7 @@ const OurServices = () => {
           <div className={styles.Header}>
             <AnimationOnScroll animateIn="animate__fadeInLeftBig" animateOnce>
               <div className={styles.Title}>
-                <BaseTitle color="#1B692C" type="h2">
+                <BaseTitle color="#1B692C" type="h3">
                   OUR SERVICES
                 </BaseTitle>
               </div>

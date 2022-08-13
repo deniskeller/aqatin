@@ -39,3 +39,21 @@ path.dot {
 .ComingSoon_Button {
   --animate-delay: 0.5s !important;
 }
+
+.marquee-container {
+  position: absolute !important;
+}
+
+.MarqueeText {
+  font-family: $font-Gobold;
+  font-style: normal;
+  font-weight: 400;
+  font-size: em(119px);
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $green;
+
+  @include ifmobile {
+    font-size: em(70px);
+  }
+}

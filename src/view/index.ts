@@ -11,3 +11,4 @@ export { default as RemunerationPlanning } from "./RemunerationPlanning/Remunera
 export { default as FundsManagement } from "./FundsManagement/FundsManagement";
 export { default as LoyaltyPrograms } from "./LoyaltyPrograms/LoyaltyPrograms";
 export { default as SendMoneyAbroad } from "./SendMoneyAbroad/SendMoneyAbroad";
+export { default as PayWithApplePay } from "./PayWithApplePay/PayWithApplePay";

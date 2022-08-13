@@ -1,0 +1,60 @@
+.Wrapper {
+  position: relative;
+}
+
+.Marquee {
+  position: absolute;
+  overflow: hidden;
+  bottom: em(-60px);
+
+  @include ifmobile {
+    bottom: em(-35px);
+  }
+}
+
+.Header {
+  position: relative;
+  padding-bottom: em(130px);
+
+  @include ifmobile {
+    padding-bottom: em(100px);
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Description {
+    max-width: em(458px);
+    @include ifmobile {
+      margin-bottom: em(60px);
+    }
+    &_Icon {
+      display: inline-block;
+      position: relative;
+      top: em(4px);
+      width: em(18px);
+      height: em(18px);
+    }
+  }
+
+  &_Image {
+    width: em(466px);
+    height: em(500px);
+    position: absolute;
+    top: 0;
+    right: em(-65px);
+
+    @include ifmobile {
+      width: em(272px);
+      height: em(295px);
+      position: relative;
+      top: auto;
+      right: auto;
+      margin: 0 auto;
+    }
+  }
+}

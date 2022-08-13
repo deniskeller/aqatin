@@ -1,0 +1,115 @@
+.Wrapper {
+  background: $yellow-bg;
+}
+
+.HowItWork {
+  padding-top: em(140px);
+  padding-bottom: em(70px);
+
+  @include ifmobile {
+    padding-top: em(94px);
+    padding-bottom: em(101px);
+  }
+
+  &_Title {
+    text-align: center;
+    margin-bottom: em(72px);
+
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Instructions {
+    width: 100%;
+    min-height: em(385px);
+    border: 2px solid #1b692c;
+    border-radius: em(10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: em(40px) em(50px);
+
+    &_Left,
+    &_Right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .Instruction:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &_Left {
+      @include ifmobile {
+        margin-bottom: em(18px);
+      }
+    }
+    @include ifmobile {
+      min-height: em(464px);
+      padding: em(30px) em(15px);
+    }
+
+    .Instruction {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: em(62px);
+      @include ifmobile {
+        margin-bottom: em(18px);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &_Stage {
+        margin-right: em(36px);
+        @include ifmobile {
+          margin-right: em(15px);
+        }
+        span {
+          font-family: $font-Gobold;
+          font-style: normal;
+          font-weight: 400;
+          font-size: em(119px);
+          line-height: 100%;
+          text-transform: uppercase;
+          color: $green;
+
+          @include ifmobile {
+            font-size: em(70px);
+          }
+        }
+      }
+
+      &_Description {
+        max-width: em(254px);
+        @include ifmobile {
+          max-width: em(151px);
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 900;
+          font-size: em(15px);
+          line-height: 152.5%;
+          text-transform: uppercase;
+          color: $black;
+          @include ifmobile {
+            font-size: em(12px);
+          }
+        }
+
+        &_Icon {
+          display: inline-block;
+          position: relative;
+          top: em(2px);
+          width: em(18px);
+          height: em(18px);
+        }
+      }
+    }
+  }
+}

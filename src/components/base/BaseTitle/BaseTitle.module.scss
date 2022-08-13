@@ -12,14 +12,16 @@
     }
   }
   &_h2 {
-    font-size: em(25px);
+    font-size: em(35px);
     line-height: 120%;
     @include ifmobile {
       font-size: em(16px);
     }
   }
   &_h3 {
-    font-size: em(22px);
-    font-weight: 400;
+    font-size: em(25px);
+    @include ifmobile {
+      font-size: em(16px);
+    }
   }
 }
