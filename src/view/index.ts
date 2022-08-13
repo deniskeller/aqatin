@@ -10,3 +10,4 @@ export { default as Culture } from "./Culture/Culture";
 export { default as RemunerationPlanning } from "./RemunerationPlanning/RemunerationPlanning";
 export { default as FundsManagement } from "./FundsManagement/FundsManagement";
 export { default as LoyaltyPrograms } from "./LoyaltyPrograms/LoyaltyPrograms";
+export { default as SendMoneyAbroad } from "./SendMoneyAbroad/SendMoneyAbroad";

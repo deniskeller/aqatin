@@ -9,7 +9,7 @@ const navbar_list = [
   {
     title: 'Money',
     list: [
-      { name: 'Send money abroad', href: '/coming_soon' },
+      { name: 'Send money abroad', href: '/send_money_abroad' },
       { name: 'Business Account', href: '/coming_soon' },
       { name: 'Merchant Account', href: '/coming_soon' },
       { name: 'Pay with Apple Pay', href: '/coming_soon' },

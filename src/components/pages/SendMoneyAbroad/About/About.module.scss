@@ -1,0 +1,144 @@
+.Wrapper {
+  background: $green-bg;
+}
+.About {
+  position: relative;
+  padding-top: em(161px);
+  padding-bottom: em(51px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include ifmobile {
+    padding: em(62px) 0;
+  }
+
+  &_Description {
+    max-width: em(458px);
+    position: relative;
+
+    @include ifmobile {
+      max-width: em(268px);
+      margin-bottom: em(150px);
+    }
+
+    &_Currency {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: em(111px);
+      margin-bottom: em(65px);
+      @include ifmobile {
+        max-width: em(103px);
+        margin-bottom: em(40px);
+      }
+      .Currency_Item {
+        position: relative;
+        width: em(30px);
+        height: em(30px);
+        @include ifmobile {
+          width: em(25px);
+          height: em(25px);
+        }
+      }
+    }
+
+    .HowItWork {
+      font-style: normal;
+      font-weight: 900;
+      font-size: em(25px);
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $white;
+      @include ifmobile {
+        font-size: em(16px);
+      }
+    }
+  }
+
+  &_Instruction {
+    width: em(503px);
+    height: em(508px);
+    border: 2px solid $yellow;
+    border-radius: em(10px);
+    padding: em(40px) em(48px) em(40px) em(35px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include ifmobile {
+      width: em(280px);
+      height: em(358px);
+      padding: em(37px) em(30px) em(36px) em(30px);
+      margin: 0 auto;
+    }
+
+    .Instruction_Item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &_Stage {
+        margin-right: em(45px);
+        @include ifmobile {
+          margin-right: em(15px);
+        }
+        span {
+          font-family: $font-Gobold;
+          font-style: normal;
+          font-weight: 400;
+          font-size: em(119px);
+          line-height: 100%;
+          text-transform: uppercase;
+          color: $yellow;
+          @include ifmobile {
+            font-size: em(70px);
+          }
+        }
+      }
+
+      &_Description {
+        font-style: normal;
+        font-weight: 900;
+        font-size: em(15px);
+        line-height: 120%;
+        text-transform: uppercase;
+        color: $white;
+        @include ifmobile {
+          font-size: em(12px);
+        }
+      }
+    }
+  }
+
+  &_IconStar {
+    width: em(72px);
+    height: em(70px);
+    position: absolute;
+    left: 0;
+    bottom: em(-20px);
+    @include ifmobile {
+      width: em(75px);
+      height: em(75px);
+      transform: rotate(18.53deg);
+      left: auto;
+      right: em(-15px);
+      bottom: em(-100px);
+    }
+  }
+
+  &_IconArrow {
+    width: em(230px);
+    position: absolute;
+    right: em(-50px);
+    bottom: em(-40px);
+    transform: scale(-1, 1) rotateZ(26deg);
+    @include ifmobile {
+      width: em(130px);
+      right: auto;
+      bottom: em(-141px);
+      left: em(-82px);
+      transform: scale(-1, 1) rotateZ(-35deg);
+    }
+  }
+}
