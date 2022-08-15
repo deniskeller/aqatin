@@ -9,7 +9,7 @@ import {
 } from '@base/index';
 import React from 'react';
 import styles from './HelpCenter.module.scss';
-import { PaddingTop } from '@content/index';
+import { PaddingTop, PhoneInput } from '@content/index';
 import IValue from '@constants/globals/types';
 import { ALL_ICONS } from '@constants/icons';
 import Marquee from 'react-fast-marquee';
@@ -87,12 +87,9 @@ const HelpCenter = () => {
                   className={styles.Form_Input}
                 />
 
-                <BaseInput
-                  view="form"
-                  name="phone_number"
-                  placeholder="(+371) Phone number"
+                <PhoneInput
                   label="PHONE NUMBER"
-                  type="text"
+                  placeholder="Phone number"
                   value={value.phone_number}
                   onChange={(val: string) => setNewValue(val, 'phone_number')}
                   className={styles.Form_Input}

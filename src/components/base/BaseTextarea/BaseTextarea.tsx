@@ -49,8 +49,6 @@ const BaseTextarea: React.FC<Props> = ({
         className={`${styles.Textarea} ${error ? styles.Error : ''}`}
       />
 
-      {view == 'form' ? <span className={styles.Bar}></span> : null}
-
       {showCount ? (
         <div className={styles.ShowCount}>
           {value.length} / {maxLength}

@@ -100,18 +100,12 @@
     border-bottom: em(2px) solid $white;
     @include placeholder-color(hsla(0, 0%, 100%, 0.4));
     padding: em(10px, $size) em(3px, $size);
+    transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+
     &:focus {
-      outline: none;
-    }
-    &:focus ~ label,
-    &:valid ~ label {
-      top: 0;
-      font-size: em(14px);
-      color: $yellow;
-    }
-    &:focus ~ .Bar:before,
-    &:focus ~ .Bar:after {
-      width: 50%;
+      border-color: $yellow;
     }
   }
 
@@ -124,39 +118,11 @@
     color: $white;
     text-transform: uppercase;
     margin-bottom: em(10px);
+    padding-left: em(4px);
   }
 
   .Error {
     border-bottom: 1px solid $red;
   }
 }
-
-.Bar {
-  position: relative;
-  display: block;
-  &:before,
-  &:after {
-    content: '';
-    height: em(2px);
-    width: 0px;
-    bottom: 0px;
-    position: absolute;
-    background: $yellow;
-    transition: 0.5s ease all;
-    -moz-transition: 0.5s ease all;
-    -webkit-transition: 0.5s ease all;
-  }
-  &:before {
-    left: 50%;
-  }
-  &:after {
-    right: 50%;
-  }
-}
-
-.Textarea_form .Textarea:focus ~ .Bar:before,
-.Textarea_form .Textarea:focus ~ .Bar:after {
-  width: 50%;
-}
-
 //type form end

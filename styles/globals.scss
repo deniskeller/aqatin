@@ -65,3 +65,54 @@ path.dot {
 .MarqueeText_HelpCenter {
   color: $yellow !important;
 }
+
+//style for input phone
+//star
+.react-tel-input {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: em(15px);
+  line-height: 100%;
+}
+
+.react-tel-input .form-control {
+  $size: 16px;
+  font-family: 'Montserrat', sans-serif !important;
+  line-height: 100% !important;
+  font-size: em($size) !important;
+  width: 100% !important;
+  height: em(38px) !important;
+  padding-left: em(40px) !important;
+  background: none !important;
+  outline: none !important;
+  border: none !important;
+  position: relative !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: hsla(0, 0%, 100%, 0.4) !important;
+  border-bottom: em(2px) solid $white !important;
+  @include placeholder-color(hsla(0, 0%, 100%, 0.4));
+  transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+
+  &:focus {
+    border-color: $yellow !important;
+  }
+}
+
+.react-tel-input .flag-dropdown {
+  background: none !important;
+  border: none !important;
+}
+.react-tel-input .selected-flag {
+  padding-left: em(5px) !important;
+  &:hover {
+    background: none !important;
+  }
+}
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background: none !important;
+}
+//end

@@ -85,8 +85,6 @@ const BaseInput: React.FC<Props> = ({
         onKeyDown={onKeyDown}
       />
 
-      {view == 'form' ? <span className={styles.Bar}></span> : null}
-
       {typeIcon === 'eye' ? (
         <BaseIcon
           fill="#1890ff"

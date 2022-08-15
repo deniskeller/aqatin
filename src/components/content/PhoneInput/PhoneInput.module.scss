@@ -1,0 +1,31 @@
+.BaseInput {
+  font-size: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: em(15px);
+  line-height: 100%;
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: em(9px);
+  padding-left: em(3px);
+}
+
+.Error {
+  border-bottom: em(2px) solid $red;
+}
+
+.ErrorText {
+  font-size: em(12px);
+  line-height: 100%;
+  color: $red;
+  font-family: 'Montserrat';
+  display: block;
+  margin-top: em(5px);
+}
