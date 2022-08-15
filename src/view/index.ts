@@ -14,3 +14,4 @@ export { default as SendMoneyAbroad } from "./SendMoneyAbroad/SendMoneyAbroad";
 export { default as PayWithApplePay } from "./PayWithApplePay/PayWithApplePay";
 export { default as PayWithGooglePay } from "./PayWithGooglePay/PayWithGooglePay";
 export { default as BudgetPlanning } from "./BudgetPlanning/BudgetPlanning";
+export { default as HelpCenter } from "./HelpCenter/HelpCenter";

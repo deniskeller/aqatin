@@ -1,0 +1,88 @@
+.Wrapper {
+  position: relative;
+  background: url('/images/image/help-center_bg.png') center;
+  background-size: cover;
+  padding-bottom: em(20px);
+}
+
+.Overlay {
+  @extend %fullsize;
+  background: $black;
+  opacity: 0.6;
+}
+
+.Marquee {
+  position: absolute;
+  overflow: hidden;
+  bottom: em(10px);
+}
+
+.HelpCenter {
+  position: relative;
+  padding-bottom: em(236px);
+
+  @include ifmobile {
+    padding-bottom: em(161px);
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Mailto {
+    color: $yellow-bg;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.Form {
+  margin-top: em(72px);
+  margin-bottom: em(41px);
+
+  @include ifmobile {
+    margin-top: em(32px);
+    margin-bottom: em(25px);
+  }
+
+  &_Row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: em(110px);
+    margin-bottom: em(37px);
+    @include ifmobile {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &_Input {
+    @include ifmobile {
+      margin-bottom: em(35px);
+    }
+  }
+
+  &_Textarea {
+    margin-bottom: em(47px);
+    @include ifmobile {
+      margin-bottom: em(24px);
+    }
+  }
+
+  &_Button {
+    width: em(70px);
+    height: em(49px);
+    @include ifmobile {
+      height: em(42px);
+    }
+
+    .Icon {
+      width: em(28px);
+    }
+  }
+}

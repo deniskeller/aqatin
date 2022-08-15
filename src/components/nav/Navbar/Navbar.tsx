@@ -114,9 +114,6 @@ const Navbar: React.FC<Props> = () => {
         <span style={{ background: burgerBg }}></span>
         <span style={{ background: burgerBg }}></span>
         <span style={{ background: burgerBg }}></span>
-        {/* <span style={{ background: !visible ? '#000' : '#fff' }}></span>
-        <span style={{ background: !visible ? '#000' : '#fff' }}></span>
-        <span style={{ background: !visible ? '#000' : '#fff' }}></span> */}
       </div>
 
       <div

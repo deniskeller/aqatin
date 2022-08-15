@@ -151,13 +151,14 @@
       }
 
       .Btn_Signup {
+        &:hover {
+          color: $grey-link !important;
+        }
+
         @include ifmobile {
           color: $white;
           order: 1;
           margin-top: em(20px);
-          &:hover {
-            color: $grey-link;
-          }
         }
       }
 

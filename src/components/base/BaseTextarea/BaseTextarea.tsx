@@ -12,6 +12,7 @@ interface Props {
   error?: string | boolean;
   value: string;
   maxLength?: number;
+  view?: string;
   onChange(value: string): void;
 }
 
@@ -21,6 +22,7 @@ const BaseTextarea: React.FC<Props> = ({
   showCount = false,
   error,
   name,
+  view = '',
   required,
   placeholder,
   className = '',
@@ -28,7 +30,11 @@ const BaseTextarea: React.FC<Props> = ({
   onChange,
 }) => {
   return (
-    <div className={`${styles.BaseTextarea} ${className}`}>
+    <div
+      className={`${styles.BaseTextarea} ${className} ${
+        styles['Textarea_' + view]
+      }`}
+    >
       {label ? <label className={styles.Label}>{label}</label> : ''}
 
       <textarea
@@ -42,11 +48,15 @@ const BaseTextarea: React.FC<Props> = ({
         }
         className={`${styles.Textarea} ${error ? styles.Error : ''}`}
       />
+
+      {view == 'form' ? <span className={styles.Bar}></span> : null}
+
       {showCount ? (
         <div className={styles.ShowCount}>
           {value.length} / {maxLength}
         </div>
       ) : null}
+
       {error ? <div className={styles.ErrorText}>{error}</div> : null}
     </div>
   );
