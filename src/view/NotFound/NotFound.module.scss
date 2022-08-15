@@ -13,7 +13,7 @@
     @extend %center;
     width: em(399px);
     height: em(229px);
-    border: 2px solid $yellow-bg;
+    border: em(2px) solid $yellow-bg;
     border-radius: em(10px);
     margin-bottom: em(50px);
 

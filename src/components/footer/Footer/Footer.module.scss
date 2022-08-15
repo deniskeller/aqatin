@@ -271,7 +271,7 @@
       .SuccessAlert {
         width: em(406px);
         height: em(120px);
-        border: 2px solid $green;
+        border: em(2px) solid $green;
         border-radius: em(10px);
         padding: em(20px) em(30px) em(29px);
         position: absolute;

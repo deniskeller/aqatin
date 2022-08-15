@@ -60,7 +60,7 @@
   &_Instruction {
     width: em(503px);
     height: em(508px);
-    border: 2px solid $yellow;
+    border: em(2px) solid $yellow;
     border-radius: em(10px);
     padding: em(40px) em(48px) em(40px) em(35px);
     display: flex;

@@ -19,7 +19,7 @@
   &_Item {
     @extend %center;
 
-    border: 2px solid $yellow;
+    border: em(2px) solid $yellow;
     border-radius: em(10px);
     position: relative;
 

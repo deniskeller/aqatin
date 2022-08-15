@@ -1,5 +1,5 @@
 .Wrapper {
-  background: $yellow-bg;
+  background: $black;
 }
 
 .HowItWork {
@@ -23,39 +23,25 @@
   &_Instructions {
     width: 100%;
     min-height: em(385px);
-    border: em(2px) solid $green;
+    border: em(2px) solid $yellow;
     border-radius: em(10px);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: em(40px) em(50px);
+    gap: em(60px) em(68px);
+    padding: em(40px) em(60px);
 
-    &_Left,
-    &_Right {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      .Instruction:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    &_Left {
-      @include ifmobile {
-        margin-bottom: em(18px);
-      }
-    }
     @include ifmobile {
-      min-height: em(464px);
-      padding: em(30px) em(15px);
+      min-height: em(280px);
+      gap: 0;
+      padding: em(35px) em(20px);
     }
 
     .Instruction {
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-bottom: em(62px);
       @include ifmobile {
         margin-bottom: em(18px);
       }
@@ -76,7 +62,7 @@
           font-size: em(119px);
           line-height: 100%;
           text-transform: uppercase;
-          color: $green;
+          color: $yellow;
 
           @include ifmobile {
             font-size: em(70px);
@@ -96,7 +82,7 @@
           font-size: em(15px);
           line-height: 152.5%;
           text-transform: uppercase;
-          color: $black;
+          color: $white;
           @include ifmobile {
             font-size: em(12px);
           }
