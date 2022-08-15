@@ -1,0 +1,96 @@
+.Wrapper {
+  position: relative;
+  background: url('/images/image/budget-planning_bg.png') center;
+  background-size: cover;
+}
+
+.Overlay {
+  @extend %fullsize;
+  background: $black;
+  opacity: 0.67;
+}
+
+.Header {
+  position: relative;
+  padding-bottom: em(300px);
+
+  @include ifmobile {
+    padding-bottom: em(202px);
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Description {
+    max-width: em(458px);
+    position: relative;
+    @include ifmobile {
+      margin-bottom: em(142px);
+    }
+
+    &_IconArrow {
+      width: em(170px);
+      position: absolute;
+      bottom: em(-150px);
+      right: em(-135px);
+      transform: scale(-1, 1) rotateZ(25deg);
+      @include ifmobile {
+        width: em(110px);
+        bottom: em(-105px);
+        right: auto;
+        left: em(-18px);
+        transform: scale(-1, 1) rotateZ(-35deg);
+      }
+    }
+  }
+
+  &_Shape {
+    position: absolute;
+    right: em(123px);
+    top: em(80px);
+    width: em(296px);
+    height: em(289px);
+    @extend %center;
+    flex-direction: column;
+    padding: 0 em(50px);
+    background: $green;
+    border-radius: em(10px);
+
+    @include ifmobile {
+      position: relative;
+      right: auto;
+      top: auto;
+      width: em(258px);
+      height: em(216px);
+      margin: 0 auto;
+      padding: 0 em(30px);
+    }
+
+    &_IconArrow {
+      width: em(170px);
+      position: absolute;
+      bottom: em(-170px);
+      right: em(75px);
+      transform: rotateZ(-20deg);
+      @include ifmobile {
+        width: em(130px);
+        bottom: em(-140px);
+        right: em(-35px);
+        left: auto;
+        transform: rotateZ(-20deg);
+      }
+    }
+
+    &_Icon {
+      display: inline-block;
+      position: relative;
+      top: em(3px);
+      width: em(18px);
+      height: em(18px);
+    }
+  }
+}

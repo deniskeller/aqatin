@@ -1,0 +1,76 @@
+.Wrapper {
+  background: $green;
+  position: relative;
+}
+
+.Marquee {
+  position: absolute;
+  overflow: hidden;
+  bottom: em(45px);
+
+  @include ifmobile {
+    bottom: em(30px);
+  }
+}
+
+.About {
+  padding-top: em(158px);
+  padding-bottom: em(265px);
+
+  @include ifmobile {
+    padding-top: em(60px);
+    padding-bottom: em(190px);
+  }
+
+  .Br {
+    @include ifdesktop {
+      display: none;
+    }
+  }
+
+  &_Description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_Left,
+    &_Right span {
+      color: $yellow;
+    }
+
+    &_Left {
+      max-width: em(458px);
+      position: relative;
+      @include ifmobile {
+        margin-bottom: em(58px);
+      }
+    }
+
+    &_Right {
+      max-width: em(469px);
+    }
+
+    &_Icon {
+      display: inline-block;
+      position: relative;
+      top: em(2px);
+      width: em(18px);
+      height: em(18px);
+    }
+
+    &_IconStar {
+      position: absolute;
+      left: 0;
+      bottom: em(-40px);
+      width: em(68px);
+      height: em(73px);
+      @include ifmobile {
+        width: em(62px);
+        height: em(64px);
+        left: auto;
+        right: 0;
+        bottom: em(-50px);
+      }
+    }
+  }
+}
