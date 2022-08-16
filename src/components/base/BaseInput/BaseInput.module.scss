@@ -126,6 +126,11 @@
     -moz-transition: 0.5s ease all;
     -webkit-transition: 0.5s ease all;
 
+    @include ifmobile {
+      $size: 12px;
+      font-size: em($size);
+    }
+
     &:focus {
       border-color: $yellow;
     }
@@ -140,6 +145,10 @@
     color: $white;
     text-transform: uppercase;
     position: relative;
+
+    @include ifmobile {
+      font-size: em(12px);
+    }
   }
 
   .Error {

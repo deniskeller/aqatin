@@ -104,6 +104,12 @@
     -moz-transition: 0.5s ease all;
     -webkit-transition: 0.5s ease all;
 
+    @include ifmobile {
+      $size: 12px;
+      font-size: em($size);
+      min-height: em(40px, $size);
+    }
+
     &:focus {
       border-color: $yellow;
     }
@@ -119,6 +125,9 @@
     text-transform: uppercase;
     margin-bottom: em(10px);
     padding-left: em(4px);
+    @include ifmobile {
+      font-size: em(12px);
+    }
   }
 
   .Error {

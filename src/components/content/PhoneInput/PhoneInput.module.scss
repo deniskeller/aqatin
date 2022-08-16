@@ -15,6 +15,9 @@
   text-transform: uppercase;
   margin-bottom: em(9px);
   padding-left: em(3px);
+  @include ifmobile {
+    font-size: em(12px);
+  }
 }
 
 .Error {
