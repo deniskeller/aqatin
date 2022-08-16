@@ -17,3 +17,4 @@ export { default as BudgetPlanning } from "./BudgetPlanning/BudgetPlanning";
 export { default as HelpCenter } from "./HelpCenter/HelpCenter";
 export { default as Affiliates } from "./Affiliates/Affiliates";
 export { default as Influencers } from "./Influencers/Influencers";
+export { default as Contacts } from "./Contacts/Contacts";
