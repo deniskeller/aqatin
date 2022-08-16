@@ -1,0 +1,88 @@
+.Wrapper {
+  display: grid;
+  grid-template-columns: em(586px) 1fr;
+
+  @include ifmobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ImageContent {
+  position: relative;
+  background: url('/images/image/influencers_bg2.png') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  height: auto;
+  @include ifmobile {
+    height: em(363px);
+  }
+}
+
+.Overlay {
+  @extend %fullsize;
+  background: #020202;
+  opacity: 0.36;
+  z-index: 1000;
+}
+
+.FormContent {
+  background: $green;
+  width: auto;
+  height: 100%;
+  padding: em(134px) em(54px) em(77px);
+  @include ifmobile {
+    padding: em(40px) em(30px) em(60px);
+  }
+
+  &_Title {
+    max-width: em(576px);
+    margin-bottom: em(46px);
+    @include ifmobile {
+      margin-bottom: em(40px);
+    }
+  }
+}
+
+.Form {
+  max-width: 90%;
+  @include ifmobile {
+    max-width: 100%;
+  }
+
+  &_Row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: em(38px);
+    margin-bottom: em(37px);
+    @include ifmobile {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &_Input {
+    @include ifmobile {
+      margin-bottom: em(35px);
+    }
+  }
+
+  &_Textarea {
+    margin-bottom: em(47px);
+    @include ifmobile {
+      margin-bottom: em(24px);
+    }
+  }
+
+  &_Button {
+    width: em(70px);
+    height: em(49px);
+    @include ifmobile {
+      height: em(42px);
+    }
+
+    .Icon {
+      width: em(28px);
+    }
+  }
+}

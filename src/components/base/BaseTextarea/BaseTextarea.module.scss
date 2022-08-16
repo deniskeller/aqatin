@@ -84,7 +84,7 @@
 //type form start
 .Textarea_form {
   .Textarea {
-    $size: 16px;
+    $size: 15px;
     font-family: 'Montserrat';
     line-height: 100%;
     font-size: em($size);
@@ -107,7 +107,7 @@
     @include ifmobile {
       $size: 12px;
       font-size: em($size);
-      min-height: em(40px, $size);
+      min-height: em(42px, $size);
     }
 
     &:focus {

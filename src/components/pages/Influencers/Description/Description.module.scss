@@ -1,0 +1,78 @@
+.Wrapper {
+  position: relative;
+  background: $black-bg;
+  min-height: em(548px);
+  padding-top: em(233px);
+  padding-bottom: em(181px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include ifmobile {
+    padding-top: em(220px);
+    padding-bottom: em(15px);
+  }
+}
+
+.Shape {
+  width: em(857px);
+  height: em(227px);
+  padding: em(50px) em(110px) em(60px) em(97px);
+  background: $yellow-bg;
+  border-radius: em(10px);
+  transform: rotate(3.89deg);
+  position: absolute;
+  z-index: 10000;
+  right: em(-20px);
+  top: em(-150px);
+  @include ifmobile {
+    width: em(317px);
+    height: em(221px);
+    padding: em(26px) em(57px) em(19px) em(26px);
+    transform: rotate(0deg);
+    right: em(-46px);
+    top: em(-34px);
+  }
+
+  p {
+    font-weight: 900;
+    font-size: em(20px);
+    line-height: 152.5%;
+    text-transform: uppercase;
+    color: $green;
+    @include ifmobile {
+      font-size: em(14px);
+    }
+  }
+}
+
+.IconHeart {
+  position: relative;
+  width: em(30px);
+  height: em(30px);
+  margin-bottom: em(15px);
+  @include ifmobile {
+    width: em(25px);
+    height: em(25px);
+  }
+}
+
+.Description {
+  max-width: em(647px);
+  text-align: center;
+  margin-bottom: em(34px);
+  @include ifmobile {
+    max-width: em(244px);
+    margin-bottom: em(40px);
+  }
+}
+
+.IconArrow {
+  position: relative;
+  left: em(-30px);
+  width: em(100px);
+  transform: scale(-1, 1) rotateZ(-25deg);
+  @include ifmobile {
+    left: em(-20px);
+  }
+}

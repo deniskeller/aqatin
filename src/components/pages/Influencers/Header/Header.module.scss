@@ -1,0 +1,55 @@
+.Wrapper {
+  position: relative;
+  background: url('/images/image/influencers_bg1.png') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  min-height: em(732px);
+}
+
+.Overlay {
+  @extend %fullsize;
+  background: $black;
+  opacity: 0.6;
+}
+
+.Header {
+  position: relative;
+  padding-bottom: em(185px);
+
+  @include ifmobile {
+    padding-bottom: em(71px);
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .Column1,
+    .Column2 {
+      max-width: em(458px);
+    }
+
+    .Column1 {
+      @include ifmobile {
+        margin-bottom: em(60px);
+      }
+    }
+
+    &_Icon {
+      position: relative;
+      top: em(3px);
+      display: inline-block;
+      width: em(18px);
+      height: em(18px);
+    }
+  }
+}

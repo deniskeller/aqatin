@@ -99,8 +99,8 @@ const HelpCenter = () => {
               <BaseTextarea
                 view="form"
                 name="question"
-                placeholder="Questions"
-                label="ASK YOUR QUESTION"
+                placeholder="Tell in a few words about yourself and your interest in our company"
+                label="TELL US ABOUT YOURSELF"
                 type="text"
                 value={value.question}
                 onChange={(val: string) => setNewValue(val, 'question')}
