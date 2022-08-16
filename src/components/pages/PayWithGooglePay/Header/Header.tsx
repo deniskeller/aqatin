@@ -50,8 +50,8 @@ const Header = () => {
 
         <Marquee className={styles.Marquee} speed={150} gradient={false}>
           <span className="MarqueeText">
-            GOOGLE PAY GOOGLE PAY GOOGLE PAY GOOGLE PAY GOOGLE PAY GOOGLE PAY
-            GOOGLE PAY GOOGLE PAY GOOGLE PAY GOOGLE PAY
+            GOOGLE PAY GOOGLE PAY GOOGLE PAY GOOGLE PAY&nbsp;GOOGLE PAY GOOGLE
+            PAY GOOGLE PAY GOOGLE PAY&nbsp;
           </span>
         </Marquee>
       </div>

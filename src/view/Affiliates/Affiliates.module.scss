@@ -1,0 +1,91 @@
+.Wrapper {
+  position: relative;
+  background: $black-bg;
+}
+
+.Affiliates {
+  position: relative;
+  padding-bottom: em(85px);
+
+  @include ifmobile {
+    padding-bottom: em(65px);
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Description {
+    max-width: em(458px);
+    margin-bottom: em(180px);
+    @include ifmobile {
+      margin-bottom: em(60px);
+    }
+
+    &_Icon {
+      position: relative;
+      top: em(3px);
+      display: inline-block;
+      width: em(18px);
+      height: em(18px);
+    }
+  }
+
+  &_Image {
+    position: absolute;
+    right: em(-70px);
+    top: 0;
+    width: em(491px);
+    height: em(462px);
+    @include ifmobile {
+      position: relative;
+      right: auto;
+      width: em(272px);
+      height: em(295px);
+      margin: 0 auto;
+      margin-bottom: em(60px);
+    }
+  }
+}
+
+.Form {
+  &_Row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: em(110px);
+    margin-bottom: em(37px);
+    @include ifmobile {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &_Input {
+    @include ifmobile {
+      margin-bottom: em(35px);
+    }
+  }
+
+  &_Textarea {
+    margin-bottom: em(47px);
+    @include ifmobile {
+      margin-bottom: em(24px);
+    }
+  }
+
+  &_Button {
+    width: em(70px);
+    height: em(49px);
+    @include ifmobile {
+      height: em(42px);
+    }
+
+    .Icon {
+      width: em(28px);
+    }
+  }
+}

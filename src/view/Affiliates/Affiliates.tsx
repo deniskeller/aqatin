@@ -8,13 +8,13 @@ import {
   BaseTitle,
 } from '@base/index';
 import React from 'react';
-import styles from './HelpCenter.module.scss';
+import styles from './Affiliates.module.scss';
 import { PaddingTop, PhoneInput } from '@content/index';
 import IValue from '@constants/globals/types';
 import { ALL_ICONS } from '@constants/icons';
-import Marquee from 'react-fast-marquee';
+import Image from 'next/image';
 
-const HelpCenter = () => {
+const Affiliates = () => {
   const [value, setValue] = React.useState<IValue>({
     name_surname: '',
     linkedin_profile: '',
@@ -34,22 +34,48 @@ const HelpCenter = () => {
   return (
     <>
       <div className={styles.Wrapper}>
-        <div className={styles.Overlay}></div>
         <BaseContainer>
           <PaddingTop />
-          <div className={styles.HelpCenter}>
-            <div className={styles.HelpCenter_Title}>
-              <BaseTitle color="#fff">HELP CENTEr</BaseTitle>
+          <div className={styles.Affiliates}>
+            <div className={styles.Affiliates_Title}>
+              <BaseTitle color="#fff">Affiliates</BaseTitle>
             </div>
 
-            <BaseText color="#fff">
-              Ask any questions and we will answer it promptly
-            </BaseText>
+            <div className={styles.Affiliates_Description}>
+              <BaseText color="#fff">
+                Develop the best accounts and share the most useful information
+                about finances together with us!&nbsp;
+                <span className={styles.Affiliates_Description_Icon}>
+                  <Image
+                    src="/images/icon/flexed-biceps.png"
+                    layout="fill"
+                    alt={'Images'}
+                  />
+                </span>
+                &nbsp;Whether you are a blogger or a writer. Join the Aqatin
+                affiliate program and get rewarded for promoting our accounts
+                among your audience.&nbsp;
+                <span className={styles.Affiliates_Description_Icon}>
+                  <Image
+                    src="/images/icon/fireworks.png"
+                    layout="fill"
+                    alt={'Images'}
+                  />
+                </span>
+              </BaseText>
+            </div>
+
+            <div className={styles.Affiliates_Image}>
+              <Image
+                src="/images/image/affiliates_image.png"
+                layout="fill"
+                alt={'Images'}
+              />
+            </div>
 
             <div className={styles.Form}>
               <div className={styles.Form_Row}>
                 <BaseInput
-                  error="Some error text"
                   view="form"
                   name="name_surname"
                   placeholder="Enter your name and surname"
@@ -61,7 +87,6 @@ const HelpCenter = () => {
                 />
 
                 <BaseInput
-                  error
                   view="form"
                   name="linkedin_profile"
                   placeholder="Show us your LinkedIn (if applicable)"
@@ -99,8 +124,8 @@ const HelpCenter = () => {
               <BaseTextarea
                 view="form"
                 name="question"
-                placeholder="Questions"
-                label="ASK YOUR QUESTION"
+                placeholder="Tell in a few words about yourself and your interest in our company"
+                label="TELL US ABOUT YOURSELF"
                 type="text"
                 value={value.question}
                 onChange={(val: string) => setNewValue(val, 'question')}
@@ -115,27 +140,11 @@ const HelpCenter = () => {
                 />
               </BaseButton>
             </div>
-
-            <BaseText color="#fff">
-              Please feel free to contact us by this email&nbsp;
-              <a href="mailto:info@aqatin.com">
-                <span className={styles.HelpCenter_Mailto}>
-                  info@aqatin.com
-                </span>
-              </a>
-            </BaseText>
           </div>
         </BaseContainer>
-
-        <Marquee className={styles.Marquee} speed={150} gradient={false}>
-          <span className="MarqueeText MarqueeText_HelpCenter">
-            HELP CENTER HELP CENTER HELP CENTER HELP CENTER&nbsp;HELP CENTER
-            HELP CENTER HELP CENTER HELP CENTER&nbsp;
-          </span>
-        </Marquee>
       </div>
     </>
   );
 };
 
-export default HelpCenter;
+export default Affiliates;

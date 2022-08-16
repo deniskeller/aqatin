@@ -58,8 +58,9 @@ const About = () => {
         </BaseContainer>
         <Marquee className={styles.Marquee} speed={150} gradient={false}>
           <span className="MarqueeText MarqueeText_BudgetPlanningPage">
-            PLAN YOUR BUDGET PLAN YOUR BUDGET PLAN YOUR BUDGET PLAN YOUR BUDGET
-            PLAN YOUR BUDGET PLAN YOUR BUDGET
+            PLAN YOUR BUDGET PLAN YOUR BUDGET PLAN YOUR BUDGET PLAN YOUR
+            BUDGET&nbsp;PLAN YOUR BUDGET PLAN YOUR BUDGET PLAN YOUR BUDGET PLAN
+            YOUR BUDGET&nbsp;
           </span>
         </Marquee>
       </div>
