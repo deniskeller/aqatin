@@ -1,0 +1,73 @@
+.Wrapper {
+  position: relative;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: em(160px);
+
+  @include ifmobile {
+    padding-bottom: em(60px);
+  }
+
+  .Info {
+    max-width: em(320px);
+    @include ifmobile {
+      margin-bottom: em(40px);
+    }
+  }
+
+  .Map {
+    width: em(567px);
+    height: em(390px);
+    @include ifmobile {
+      width: 100%;
+      height: em(191px);
+    }
+  }
+
+  &_Title {
+    margin-bottom: em(35px);
+    @include ifmobile {
+      margin-bottom: em(30px);
+    }
+  }
+
+  &_Contacts {
+    display: flex;
+    flex-direction: column;
+
+    .ContactItem {
+      margin-bottom: em(50px);
+      @include ifmobile {
+        margin-bottom: em(40px);
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &_Name {
+        margin-bottom: em(8px);
+      }
+
+      &_Description {
+        max-width: em(276px);
+        p {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: em(15px);
+          line-height: 120%;
+          text-transform: uppercase;
+          color: $black;
+          @include ifmobile {
+            font-size: em(14px);
+          }
+        }
+      }
+    }
+  }
+}

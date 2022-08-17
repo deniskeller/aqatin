@@ -1,2 +1,2 @@
-export { default as Header } from "./Header/Header";
-export { default as HowItWork } from "./HowItWork/HowItWork";
+export { default as AppleHeader } from "./AppleHeader/AppleHeader";
+export { default as AppleHowItWork } from "./AppleHowItWork/AppleHowItWork";

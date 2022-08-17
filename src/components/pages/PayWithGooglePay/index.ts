@@ -1,2 +1,2 @@
-export { default as Header } from "./Header/Header";
-export { default as HowItWork } from "./HowItWork/HowItWork";
+export { default as GoogleHeader } from "./GoogleHeader/GoogleHeader";
+export { default as GoogleHowItWork } from "./GoogleHowItWork/GoogleHowItWork";

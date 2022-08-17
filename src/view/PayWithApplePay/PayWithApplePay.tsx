@@ -1,11 +1,11 @@
-import { Header, HowItWork } from 'components/pages/PayWithApplePay';
+import { AppleHeader, AppleHowItWork } from 'components/pages/PayWithApplePay';
 import React from 'react';
 
 const PayWithApplePay = () => {
   return (
     <>
-      <Header />
-      <HowItWork />
+      <AppleHeader />
+      <AppleHowItWork />
     </>
   );
 };

@@ -1,3 +1,3 @@
-export { default as Header } from "./Header/Header";
-export { default as About } from "./About/About";
-export { default as Info } from "./Info/Info";
+export { default as LoyaltyProgramsHeader } from "./LoyaltyProgramsHeader/LoyaltyProgramsHeader";
+export { default as LoyaltyProgramsAbout } from "./LoyaltyProgramsAbout/LoyaltyProgramsAbout";
+export { default as LoyaltyProgramsInfo } from "./LoyaltyProgramsInfo/LoyaltyProgramsInfo";

@@ -1,2 +1,2 @@
-export { default as Header } from "./Header/Header";
-export { default as Form } from "./Form/Form";
+export { default as ContactsHeader } from "./ContactsHeader/ContactsHeader";
+export { default as ContactsForm } from "./ContactsForm/ContactsForm";

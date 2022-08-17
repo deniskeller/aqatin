@@ -1,11 +1,14 @@
-import { About, Header } from 'components/pages/BudgetPlanning';
+import {
+  BudgetPlanningAbout,
+  BudgetPlanningHeader,
+} from 'components/pages/BudgetPlanning';
 import React from 'react';
 
 const BudgetPlanning = () => {
   return (
     <>
-      <Header />
-      <About />
+      <BudgetPlanningHeader />
+      <BudgetPlanningAbout />
     </>
   );
 };

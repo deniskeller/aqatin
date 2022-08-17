@@ -1,3 +1,3 @@
-export { default as Header } from "./Header/Header";
-export { default as Description } from "./Description/Description";
-export { default as Form } from "./Form/Form";
+export { default as InfluencersHeader } from "./InfluencersHeader/InfluencersHeader";
+export { default as InfluencersDescription } from "./InfluencersDescription/InfluencersDescription";
+export { default as InfluencersForm } from "./InfluencersForm/InfluencersForm";

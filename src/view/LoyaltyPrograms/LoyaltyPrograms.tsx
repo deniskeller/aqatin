@@ -1,12 +1,16 @@
-import { About, Header, Info } from 'components/pages/LoyaltyPrograms';
+import {
+  LoyaltyProgramsAbout,
+  LoyaltyProgramsHeader,
+  LoyaltyProgramsInfo,
+} from 'components/pages/LoyaltyPrograms';
 import React from 'react';
 
 const LoyaltyPrograms = () => {
   return (
     <>
-      <Header />
-      <Info />
-      <About />
+      <LoyaltyProgramsHeader />
+      <LoyaltyProgramsInfo />
+      <LoyaltyProgramsAbout />
     </>
   );
 };

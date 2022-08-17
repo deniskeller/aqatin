@@ -1,11 +1,14 @@
-import { Header, HowItWork } from 'components/pages/PayWithGooglePay';
+import {
+  GoogleHeader,
+  GoogleHowItWork,
+} from 'components/pages/PayWithGooglePay';
 import React from 'react';
 
 const PayWithGooglePay = () => {
   return (
     <>
-      <Header />
-      <HowItWork />
+      <GoogleHeader />
+      <GoogleHowItWork />
     </>
   );
 };
