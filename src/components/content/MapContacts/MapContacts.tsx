@@ -4,6 +4,8 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const MapContacts = () => {
+  // if (typeof window === undefined) return null;
+
   return (
     <>
       {/* <MapContainer
