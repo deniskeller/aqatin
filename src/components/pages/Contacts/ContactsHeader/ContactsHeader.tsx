@@ -1,27 +1,20 @@
 import { BaseContainer, BaseText, BaseTitle } from '@base/index';
-import React from 'react';
+import React, { Suspense } from 'react';
 import styles from './ContactsHeader.module.scss';
 import { PaddingTop } from '@content/index';
 import dynamic from 'next/dynamic';
 
-// const MapContacts = () => {
-//   const Map = React.useMemo(
-//     () =>
-//       dynamic(() => import('../../../content/MapContacts/MapContacts'), {
-//         loading: () => <p>A map is loading</p>,
-//         ssr: false,
-//       }),
-//     []
-//   );
-//   return <Map />;
-// };
-
-const MapContacts = dynamic(
-  () => import('../../../content/MapContacts/MapContacts'),
-  {
-    ssr: false,
-  }
-);
+const MapContacts = () => {
+  const Map = React.useMemo(
+    () =>
+      dynamic(() => import('@content/MapContacts/MapContacts'), {
+        loading: () => <p>A map is loading</p>,
+        ssr: false,
+      }),
+    []
+  );
+  return <Map />;
+};
 
 const ContactsHeader = () => {
   return (
@@ -69,7 +62,9 @@ const ContactsHeader = () => {
             </div>
 
             <div className={styles.Map}>
-              <MapContacts />
+              <Suspense fallback={`Loading...`}>
+                <MapContacts />
+              </Suspense>
             </div>
           </div>
         </BaseContainer>

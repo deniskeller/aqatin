@@ -1,0 +1,15 @@
+.Marker {
+  position: absolute;
+  right: calc(50% - em(16.5px));
+  bottom: 0;
+  cursor: pointer;
+  width: em(33px);
+  height: em(41px);
+  font-size: initial;
+
+  @include ifmobile {
+    width: em(16px);
+    height: em(20px);
+    right: calc(50% - em(8px));
+  }
+}

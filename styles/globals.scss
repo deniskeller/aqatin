@@ -155,3 +155,9 @@ path.dot {
   }
 }
 //end
+
+//стили карты
+.leaflet-marker-icon.leaflet-interactive {
+  border: none;
+  background: none;
+}
