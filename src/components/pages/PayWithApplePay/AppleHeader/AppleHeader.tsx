@@ -45,7 +45,7 @@ const AppleHeader = () => {
               </div>
             </div>
 
-            <div className="animate__animated animate__fadeIn animate__delay-4s">
+            <div className="animate__animated animate__zoomIn animate__zoomIn__new_style animate__delay-4s">
               <div className={styles.Header_Image}>
                 <Image
                   src="/images/image/pay_with_apple_pay_image.png"

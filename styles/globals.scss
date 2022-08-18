@@ -12,8 +12,17 @@
 .RemunerationPlanningAbout__animate__delay {
   --animate-delay: 0.4s !important;
 }
-.animate__swing__sticker {
-  // width: auto !important;
+.animate__zoomIn__new_style {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  @include ifmobile {
+    position: relative;
+    right: auto;
+    top: auto;
+    bottom: auto;
+  }
 }
 
 .animate__fadeInRight {
