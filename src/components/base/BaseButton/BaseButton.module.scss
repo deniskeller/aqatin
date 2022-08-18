@@ -93,8 +93,32 @@
   border-color: transparent;
   background: 0 0;
   box-shadow: none;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: em(-5px);
+    left: 0;
+    height: 1px;
+    background-color: $yellow;
+  }
+
   &:hover {
-    color: $grey-link;
+    &::after {
+      animation: bottomLine 0.5s linear forwards;
+    }
+    .Title {
+      color: $yellow;
+    }
+  }
+}
+
+@keyframes bottomLine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }
 

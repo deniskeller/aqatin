@@ -25,6 +25,15 @@
   font-family: 'Montserrat';
   color: $black;
   text-transform: uppercase;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: em(-5px);
+    left: 0;
+    height: 1px;
+    background-color: $yellow;
+  }
 
   @include iftablet {
     font-size: em(14px);
@@ -36,5 +45,17 @@
 }
 
 .Link:hover {
-  color: $grey-link !important;
+  color: $yellow !important;
+  &::after {
+    animation: bottomLine 0.5s linear forwards;
+  }
+}
+
+@keyframes bottomLine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }

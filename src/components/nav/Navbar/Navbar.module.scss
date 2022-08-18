@@ -3,23 +3,6 @@
   position: absolute;
   z-index: 1000;
 
-  .Logo {
-    z-index: 900;
-    position: absolute;
-    top: em(32px);
-    left: em(35px);
-    cursor: pointer;
-    width: em(105px);
-    height: em(25px);
-
-    @include ifdesktop {
-      display: none !important;
-    }
-    @include iftablet {
-      display: none !important;
-    }
-  }
-
   .Border {
     display: none;
     position: absolute;
@@ -33,14 +16,7 @@
     border-bottom: 0.5px solid $black;
     transform: translate(50%, -50%);
     z-index: 1000;
-
-    // @include ifdesktop {
     max-width: em(1066px);
-    // }
-
-    // @include iftablet {
-    //   max-width: em(685px);
-    // }
 
     @include ifmobile {
       max-width: em(300px);
@@ -111,7 +87,7 @@
     padding: em(21px) em(20px) em(11px);
 
     @include ifmobile {
-      position: absolute;
+      position: static;
       z-index: 800;
       top: 0;
       right: 0;
@@ -177,6 +153,26 @@
   .Navbar_Visible {
     padding: em(98px) 0 em(44px);
     height: auto;
+  }
+}
+
+.Logo {
+  z-index: 900;
+
+  cursor: pointer;
+  width: em(105px);
+  height: em(25px);
+
+  @include ifmobile {
+    position: absolute;
+    top: em(32px);
+    left: em(35px);
+  }
+}
+
+.Green:hover {
+  span {
+    color: red !important;
   }
 }
 

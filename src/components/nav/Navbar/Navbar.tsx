@@ -12,54 +12,28 @@ interface Links {
   [key: string]: string;
 }
 
+const links: Links[] = [
+  {
+    href: '/personal_account',
+    title: 'Personal Account',
+  },
+  {
+    href: '/business_account',
+    title: 'Business Account',
+  },
+  {
+    href: '/company',
+    title: 'Company',
+  },
+];
+
 const Navbar: React.FC<Props> = () => {
   const router = useRouter();
   const [visible, setVisible] = React.useState(false);
-  const [links, setLinks] = React.useState<Links[]>([]);
   const [color, setColor] = React.useState<string>('#000');
   const [burgerBg, setBurgerBg] = React.useState<string>('#000');
 
   React.useEffect(() => {
-    const links1 = [
-      {
-        href: '/personal_account',
-        title: 'Personal Account',
-      },
-      {
-        href: '/business_account',
-        title: 'Business Account',
-      },
-      {
-        href: '/company',
-        title: 'Company',
-      },
-    ];
-    const links2 = [
-      {
-        href: '/',
-        title: 'home',
-      },
-      {
-        href: '/personal_account',
-        title: 'Personal Account',
-      },
-      {
-        href: '/business_account',
-        title: 'Business Account',
-      },
-      {
-        href: '/company',
-        title: 'Company',
-      },
-    ];
-
-    //условие для появления ссылки home
-    if (router.pathname != '/') {
-      setLinks(links2);
-    } else {
-      setLinks(links1);
-    }
-
     //условие для смены цветом ссылок меню
     if (
       router.pathname == '/personal_account' ||
@@ -88,23 +62,6 @@ const Navbar: React.FC<Props> = () => {
 
   return (
     <div className={styles.Container}>
-      <Link href="/">
-        <a>
-          <div
-            className={styles.Logo}
-            style={{ display: !visible ? 'block' : 'none' }}
-          >
-            <BaseIcon
-              viewBox="0 0 209 56"
-              icon={ALL_ICONS.LOGO}
-              className={`${styles.Icon} ${
-                color == '#000' ? 'IconBlack' : 'IconWhite'
-              }`}
-            />
-          </div>
-        </a>
-      </Link>
-
       <div
         className={`${styles.Burger} ${
           visible ? styles.Active : styles.NotActive
@@ -125,6 +82,23 @@ const Navbar: React.FC<Props> = () => {
         className={`${styles.Navbar} ${visible ? styles.Navbar_Visible : ''}`}
       >
         <ul className={styles.NavbarNav}>
+          <Link href="/">
+            <a>
+              <div
+                className={styles.Logo}
+                style={{ display: !visible ? 'block' : 'none' }}
+              >
+                <BaseIcon
+                  viewBox="0 0 209 56"
+                  icon={ALL_ICONS.LOGO}
+                  className={`${styles.Icon} ${
+                    color == '#000' ? 'IconBlack' : 'IconWhite'
+                  }`}
+                />
+              </div>
+            </a>
+          </Link>
+
           {links.map((link, index) => {
             return (
               <NavbarLink
@@ -143,11 +117,17 @@ const Navbar: React.FC<Props> = () => {
             title="Sign up"
             type="link"
             size="mini"
-            className={styles.Btn_Signup}
+            className={`${styles.Btn_Signup}`}
             style={{ color: color }}
+            onClick={() => router.push('/coming_soon')}
           />
 
-          <BaseButton title="Log in" size="mini" className={styles.Btn_Login} />
+          <BaseButton
+            title="Log in"
+            size="mini"
+            className={styles.Btn_Login}
+            onClick={() => router.push('/coming_soon')}
+          />
         </div>
       </div>
     </div>
