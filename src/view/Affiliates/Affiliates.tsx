@@ -10,9 +10,9 @@ import {
 import React from 'react';
 import styles from './Affiliates.module.scss';
 import { PaddingTop, PhoneInput } from '@content/index';
-import IValue from '@constants/globals/types';
 import { ALL_ICONS } from '@constants/icons';
 import Image from 'next/image';
+import { IValue } from '@constants/globals/types';
 
 const Affiliates = () => {
   const [value, setValue] = React.useState<IValue>({

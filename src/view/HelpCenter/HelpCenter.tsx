@@ -10,9 +10,9 @@ import {
 import React from 'react';
 import styles from './HelpCenter.module.scss';
 import { PaddingTop, PhoneInput } from '@content/index';
-import IValue from '@constants/globals/types';
 import { ALL_ICONS } from '@constants/icons';
 import Marquee from 'react-fast-marquee';
+import { IValue } from '@constants/globals/types';
 
 const HelpCenter = () => {
   const [value, setValue] = React.useState<IValue>({

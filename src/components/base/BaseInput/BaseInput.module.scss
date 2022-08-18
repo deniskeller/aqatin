@@ -29,7 +29,7 @@
 
   @include ifmobile {
     $size: 12px;
-    padding: em(13px, $size) em(14px, $size) em(13px, $size) em(14px, $size);
+    padding: em(8px, $size) em(14px, $size);
   }
 
   &:focus {
@@ -45,7 +45,7 @@
   @include ifmobile {
     $size: 12px;
     font-size: em($size);
-    padding: em(12px, $size) em(12px, $size) em(12px, $size) em(12px, $size);
+    padding: em(8px, $size) em(12px, $size);
   }
 }
 

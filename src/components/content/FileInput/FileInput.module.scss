@@ -1,0 +1,99 @@
+.FileInput {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: em(37px);
+  @include ifmobile {
+    margin-bottom: em(18px);
+  }
+  &_Wrapper {
+    width: em(640px);
+    height: em(49px);
+    @include ifmobile {
+      width: 100%;
+      height: em(34px);
+      margin-bottom: em(11px);
+    }
+    .Input {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 em(17px) 0 em(42px);
+      background: $input;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: em(10px);
+      position: relative;
+
+      @include ifmobile {
+        padding: 0 em(22px);
+      }
+
+      &_Title {
+        font-size: em(15px);
+        font-weight: 400;
+        font-family: 'Montserrat';
+        font-style: normal;
+        color: $placeholder;
+        @include ifmobile {
+          font-size: em(12px);
+        }
+      }
+
+      &_IconClose {
+        display: flex;
+        width: em(20px);
+        height: em(20px);
+        position: absolute;
+        top: calc(50% - em(10px));
+        right: em(20px);
+        cursor: pointer;
+        @include ifmobile {
+          width: em(12px);
+          height: em(12px);
+          top: calc(50% - em(6px));
+          right: em(10px);
+        }
+      }
+    }
+  }
+
+  &_Btn {
+    width: em(238px);
+    height: em(49px);
+    @extend %button;
+    border-radius: em(10px);
+    cursor: pointer;
+    transition: 0.3s;
+    background: $yellow;
+    font-size: 100%;
+    span {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: em(18px);
+      white-space: nowrap;
+      text-transform: uppercase;
+      @include ifmobile {
+        font-size: em(12px);
+      }
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+    input[type='file'] {
+      display: none;
+    }
+
+    @include ifmobile {
+      width: 100%;
+      height: em(34px);
+    }
+  }
+}
+
+.Active {
+  background: $yellow !important;
+}

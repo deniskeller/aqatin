@@ -1,35 +1,11 @@
-import {
-  BaseButton,
-  BaseContainer,
-  BaseIcon,
-  BaseInput,
-  BaseTextarea,
-  BaseTitle,
-} from '@base/index';
-import IValue from '@constants/globals/types';
-import { ALL_ICONS } from '@constants/icons';
-import { AccordionCareerItem, PhoneInput } from '@content/index';
-import Image from 'next/image';
 import React from 'react';
 import styles from './Vacancies.module.scss';
+import Image from 'next/image';
+import { BaseContainer, BaseTitle } from '@base/index';
+import { AccordionCareerItem } from '@content/index';
+import { CareerForm } from 'components/forms';
 
 const Vacancies = () => {
-  const [value, setValue] = React.useState<IValue>({
-    name_surname: '',
-    linkedin_profile: '',
-    email: '',
-    phone_number: '',
-    question: '',
-  });
-
-  React.useEffect(() => {
-    // console.log('default: ', value);
-  }, [value]);
-
-  const setNewValue = (val: string | number, key: string) => {
-    setValue((prev) => ({ ...prev, [key]: val }));
-  };
-
   return (
     <>
       <div className={styles.Wrapper}>
@@ -154,7 +130,7 @@ const Vacancies = () => {
                   </div>
 
                   <div className={styles.CareerItem_Form}>
-                    <div className={styles.Form}>
+                    {/* <div className={styles.Form}>
                       <div className={styles.Form_Row}>
                         <BaseInput
                           view="form"
@@ -217,6 +193,8 @@ const Vacancies = () => {
                         className={styles.Form_Textarea}
                       />
 
+                      <input type="file" multiple draggable />
+
                       <BaseButton className={styles.Form_Button}>
                         <BaseIcon
                           viewBox="0 0 31 24"
@@ -224,7 +202,8 @@ const Vacancies = () => {
                           className={styles.Icon}
                         />
                       </BaseButton>
-                    </div>
+                    </div> */}
+                    <CareerForm />
                   </div>
                 </div>
               </AccordionCareerItem>

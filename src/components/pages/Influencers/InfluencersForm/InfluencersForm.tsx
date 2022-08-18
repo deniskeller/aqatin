@@ -9,9 +9,9 @@ import {
 import React from 'react';
 import styles from './InfluencersForm.module.scss';
 import Image from 'next/image';
-import IValue from '@constants/globals/types';
 import { ALL_ICONS } from '@constants/icons';
 import { PhoneInput } from '@content/index';
+import { IValue } from '@constants/globals/types';
 
 const InfluencersForm = () => {
   const [value, setValue] = React.useState<IValue>({
