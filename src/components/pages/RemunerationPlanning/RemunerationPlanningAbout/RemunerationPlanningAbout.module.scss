@@ -99,11 +99,11 @@
       @include ifmobile {
         margin-right: 0;
         .Sticker1 {
-          width: 85%;
+          min-width: em(249px);
         }
         .Sticker2,
         .Sticker3 {
-          width: 48%;
+          min-width: em(135px);
         }
       }
     }
@@ -112,13 +112,14 @@
       margin-right: em(137px);
       @include ifmobile {
         margin-right: 0;
+        justify-content: center;
         .Sticker1 {
-          width: 85%;
+          min-width: em(249px);
           margin: 0 auto;
           margin-bottom: em(11px);
         }
         .Sticker2 {
-          width: 90%;
+          min-width: em(271px);
           margin: 0 auto;
         }
       }

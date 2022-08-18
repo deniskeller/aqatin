@@ -34,7 +34,7 @@
 
     @include ifmobile {
       min-height: em(280px);
-      gap: 0;
+      gap: em(18px) 0;
       padding: em(35px) em(20px);
     }
 
@@ -42,13 +42,6 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      @include ifmobile {
-        margin-bottom: em(18px);
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
 
       &_Stage {
         margin-right: em(36px);

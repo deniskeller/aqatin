@@ -9,6 +9,13 @@
   --animate-delay: 0.5s !important;
 }
 
+.RemunerationPlanningAbout__animate__delay {
+  --animate-delay: 0.4s !important;
+}
+.animate__swing__sticker {
+  // width: auto !important;
+}
+
 .animate__fadeInRight {
   position: absolute !important;
   top: em(240px) !important;
