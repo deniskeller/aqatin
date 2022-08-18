@@ -41,10 +41,13 @@
 }
 
 .Form {
+  display: grid;
   margin-top: em(72px);
   margin-bottom: em(41px);
+  min-height: em(370px);
 
   @include ifmobile {
+    min-height: em(512px);
     margin-top: em(32px);
     margin-bottom: em(25px);
   }

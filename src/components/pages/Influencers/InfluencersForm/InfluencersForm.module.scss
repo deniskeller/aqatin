@@ -26,11 +26,14 @@
 }
 
 .FormContent {
+  display: grid;
   background: $green;
   width: auto;
   height: 100%;
   padding: em(134px) em(54px) em(77px);
+  min-height: em(727px);
   @include ifmobile {
+    min-height: em(757px);
     padding: em(40px) em(30px) em(60px);
   }
 

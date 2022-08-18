@@ -52,6 +52,13 @@
 }
 
 .Form {
+  display: grid;
+  min-height: em(370px);
+
+  @include ifmobile {
+    min-height: em(512px);
+  }
+
   &_Row {
     display: grid;
     grid-template-columns: 1fr 1fr;

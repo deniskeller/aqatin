@@ -1,0 +1,70 @@
+.SuccessAlert {
+  display: flex;
+  width: 100%;
+  position: relative;
+  border: em(2px) solid $yellow;
+  border-radius: em(10px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 em(60px) 0 em(80px);
+  animation-name: FadeIn;
+  animation-duration: 2s;
+  transition-timing-function: linear;
+  @include ifmobile {
+    padding: 0 em(15px);
+  }
+
+  &_Title {
+    margin-bottom: em(10px);
+
+    span {
+      font-family: $font-Gobold;
+      font-style: normal;
+      font-weight: 400;
+      font-size: em(54px);
+      line-height: 120%;
+      text-transform: uppercase;
+      color: $white;
+      @include ifmobile {
+        font-size: em(32px);
+      }
+    }
+  }
+
+  &_Subtitle {
+    font-size: em(15px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    color: $yellow;
+    text-transform: uppercase;
+    @include ifmobile {
+      font-size: em(12px);
+    }
+  }
+
+  &_Icon {
+    position: absolute;
+    right: em(30px);
+    bottom: em(30px);
+    width: em(54px);
+    height: em(54px);
+
+    @include ifmobile {
+      right: em(15px);
+      bottom: em(15px);
+      width: em(30px);
+      height: em(30px);
+    }
+  }
+}
+
+@include keyframe(FadeIn) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
