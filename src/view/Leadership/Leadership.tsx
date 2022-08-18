@@ -1,12 +1,16 @@
-import { About, Header, Join } from 'components/pages/Leadership';
+import {
+  LeadershipAbout,
+  LeadershipHeader,
+  LeadershipJoin,
+} from 'components/pages/Leadership';
 import React from 'react';
 
 const Leadership = () => {
   return (
     <>
-      <Header />
-      <About />
-      <Join />
+      <LeadershipHeader />
+      <LeadershipAbout />
+      <LeadershipJoin />
     </>
   );
 };

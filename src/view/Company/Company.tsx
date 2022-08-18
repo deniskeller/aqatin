@@ -1,11 +1,15 @@
-import { About, ChooseProfile, Header } from 'components/pages/Company';
+import {
+  CompanyAbout,
+  ChooseProfile,
+  CompanyHeader,
+} from 'components/pages/Company';
 import React from 'react';
 
 const Company = () => {
   return (
     <>
-      <Header />
-      <About />
+      <CompanyHeader />
+      <CompanyAbout />
       <ChooseProfile />
     </>
   );

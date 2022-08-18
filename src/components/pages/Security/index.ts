@@ -1,2 +1,2 @@
-export { default as Header } from "./Header/Header";
-export { default as About } from "./About/About";
+export { default as SecurityHeader } from "./SecurityHeader/SecurityHeader";
+export { default as SecurityAbout } from "./SecurityAbout/SecurityAbout";

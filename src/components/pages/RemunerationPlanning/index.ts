@@ -1,3 +1,3 @@
-export { default as Header } from "./Header/Header";
-export { default as About } from "./About/About";
-export { default as Jion } from "./Jion/Jion";
+export { default as RemunerationPlanningHeader } from "./RemunerationPlanningHeader/RemunerationPlanningHeader";
+export { default as RemunerationPlanningAbout } from "./RemunerationPlanningAbout/RemunerationPlanningAbout";
+export { default as RemunerationPlanningJoin } from "./RemunerationPlanningJoin/RemunerationPlanningJoin";

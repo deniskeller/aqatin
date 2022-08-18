@@ -1,2 +1,2 @@
-export { default as Header } from "./Header/Header";
-export { default as Join } from "./Join/Jion";
+export { default as FundsManagementHeader } from "./FundsManagementHeader/FundsManagementHeader";
+export { default as FundsManagementJoin } from "./FundsManagementJoin/FundsManagementJoin";

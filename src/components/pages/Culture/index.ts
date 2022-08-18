@@ -1,3 +1,3 @@
-export { default as Header } from "./Header/Header";
-export { default as About } from "./About/About";
-export { default as Jion } from "./Jion/Jion";
+export { default as CultureHeader } from "./CultureHeader/CultureHeader";
+export { default as CultureAbout } from "./CultureAbout/CultureAbout";
+export { default as CultureJoin } from "./CultureJoin/CultureJoin";

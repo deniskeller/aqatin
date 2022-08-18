@@ -1,10 +1,10 @@
-import { Capabilities, Header } from 'components/pages/PersonalAccount';
+import { Capabilities, PersonalAccountHeader } from 'components/pages/PersonalAccount';
 import React from 'react';
 
 const PersonalAccount = () => {
   return (
     <>
-      <Header />
+      <PersonalAccountHeader />
       <Capabilities />
     </>
   );

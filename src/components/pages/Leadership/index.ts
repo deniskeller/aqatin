@@ -1,3 +1,3 @@
-export { default as Header } from "./Header/Header";
-export { default as About } from "./About/About";
-export { default as Join } from "./Join/Join";
+export { default as LeadershipHeader } from "./LeadershipHeader/LeadershipHeader";
+export { default as LeadershipAbout } from "./LeadershipAbout/LeadershipAbout";
+export { default as LeadershipJoin } from "./LeadershipJoin/LeadershipJoin";
