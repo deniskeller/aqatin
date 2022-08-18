@@ -247,3 +247,46 @@
     }
   }
 }
+
+.SuccessAlert {
+  display: flex;
+  width: em(565px);
+  height: em(115px);
+  position: relative;
+  border: em(2px) solid $green;
+  border-radius: em(10px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 em(20px);
+  animation-name: FadeIn;
+  animation-duration: 2s;
+  transition-timing-function: linear;
+  @include ifmobile {
+    width: 100%;
+    height: em(182px);
+  }
+
+  &_Title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(14px);
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $green;
+    @include ifmobile {
+      font-size: em(12px);
+    }
+  }
+}
+
+@include keyframe(FadeIn) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

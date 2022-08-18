@@ -13,6 +13,8 @@ import styles from './Header.module.scss';
 
 const Header = () => {
   const [value, setValue] = React.useState<string>('');
+  const [success, setSuccess] = React.useState<boolean>(false);
+
   return (
     <>
       <BaseContainer>
@@ -56,27 +58,44 @@ const Header = () => {
           </div>
 
           <div className="animate__animated animate__fadeIn animate__delay-3s Header_Content_Description">
-            <div className={styles.Content_Description}>
-              <p>
-                Enter your email and you will be the first who will get all the
-                updates and information about our upcoming launch
-              </p>
-            </div>
+            {!success ? (
+              <div style={{ opacity: !success ? '1' : '0' }}>
+                <div className={styles.Content_Description}>
+                  <p>
+                    Enter your email and you will be the first who will get all
+                    the updates and information about our upcoming launch
+                  </p>
+                </div>
 
-            <div className={styles.Content_Form}>
-              <BaseInput
-                name="mail"
-                placeholder="hello@yourmail.com"
-                type="mail"
-                value={value}
-                onChange={(val: string) => setValue(val)}
-                className={styles.Content_Form_Input}
-              />
-              <BaseButton
-                title="Let`s go!"
-                className={styles.Content_Form_Button}
-              />
-            </div>
+                <div className={styles.Content_Form}>
+                  <BaseInput
+                    name="mail"
+                    placeholder="hello@yourmail.com"
+                    type="mail"
+                    value={value}
+                    onChange={(val: string) => setValue(val)}
+                    className={styles.Content_Form_Input}
+                  />
+                  <BaseButton
+                    title="Let`s go!"
+                    className={styles.Content_Form_Button}
+                    onClick={() => setSuccess(true)}
+                  />
+                </div>
+              </div>
+            ) : (
+              <>
+                <div
+                  className={styles.SuccessAlert}
+                  style={{ opacity: success ? '1' : '0' }}
+                >
+                  <div className={styles.SuccessAlert_Title}>
+                    thank you! <br />
+                    Your email was added to our list.
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </BaseContainer>
