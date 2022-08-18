@@ -103,12 +103,14 @@ const ContactsForm = () => {
                   className={styles.Form_Textarea}
                 />
 
-                <BaseButton className={styles.Form_Button}>
+                <BaseButton
+                  className={styles.Form_Button}
+                  onClick={() => setSuccess(true)}
+                >
                   <BaseIcon
                     viewBox="0 0 31 24"
                     icon={ALL_ICONS.ARROW_RIGHT}
                     className={styles.Icon}
-                    onClick={() => setSuccess(true)}
                   />
                 </BaseButton>
               </div>
