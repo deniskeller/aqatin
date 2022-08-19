@@ -19,7 +19,7 @@
   outline: none;
   background-color: $yellow;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: em(10px);
   transform: rotateZ(-90deg);
   box-shadow: 0 em(2px) em(16px) rgba(255, 255, 35, 0.5);
   transition: box-shadow $speed;
