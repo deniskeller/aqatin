@@ -116,6 +116,7 @@ const HelpCenter = () => {
                   />
 
                   <BaseButton
+                    tooltip="submit"
                     className={styles.Form_Button}
                     onClick={() => setSuccess(true)}
                   >

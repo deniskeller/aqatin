@@ -6,6 +6,7 @@ import styles from './BaseButton.module.scss';
 interface Props {
   children?: ReactNode | ReactNode[];
   title?: string;
+  tooltip?: string;
   onClick?: (ev: React.MouseEvent<HTMLButtonElement>) => void;
   type?: string;
   size?: string;
@@ -25,10 +26,11 @@ const BaseButton: React.FC<Props> = ({
   className = '',
   loading = false,
   style,
+  tooltip = '',
 }) => {
   return (
     <button
-      title={title}
+      title={tooltip}
       onClick={onClick}
       disabled={disabled}
       className={`${className} ${styles.Button} ${styles['Button_' + type]}`}
