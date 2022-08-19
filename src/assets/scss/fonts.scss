@@ -3,6 +3,7 @@
   src: url('~assets/fonts/Arial-Black.woff2') format('woff2'),
     url('~assets/fonts/Arial-Black.woff') format('woff');
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url('~assets/fonts/Calibri-Regular.woff2') format('woff2'),
     url('~assets/fonts/Calibri-Regular.woff') format('woff');
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   font-style: normal;
   src: url('~assets/fonts/calibril.woff') format('woff');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,10 +27,12 @@
   src: url('~assets/fonts/Gobold-Hollow.woff') format('woff'),
     url('~assets/fonts/Gobold-Hollow.eot') format('eot');
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Flood-std';
   src: url('~assets/fonts/Flood-std.otf') format('otf');
   font-weight: normal;
+  font-display: swap;
 }
