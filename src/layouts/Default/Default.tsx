@@ -12,26 +12,58 @@ interface Props {
 const Default: React.FC<Props> = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const scrollToTop = () => {
-    document.body.scrollTop = 0; // Для Safari
-    document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
-  };
+  // const scrollToTop = () => {
+  //   document.body.scrollTop = 0; // Для Safari
+  //   document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+  // };
 
-  const scrollFunction = () => {
-    if (
-      document.body.scrollTop > 700 ||
-      document.documentElement.scrollTop > 700
-    ) {
+  // const scrollFunction = () => {
+  //   if (
+  //     document.body.scrollTop > 700 ||
+  //     document.documentElement.scrollTop > 700
+  //   ) {
+  //     setIsVisible(true);
+  //   } else {
+  //     setIsVisible(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   if (typeof window !== undefined && typeof document !== undefined) {
+  //     window.onscroll = function () {
+  //       scrollFunction();
+  //     };
+  //   }
+  // }, []);
+
+  function trackScroll() {
+    var scrolled = window.pageYOffset;
+    var coords = document.documentElement.clientHeight;
+
+    if (scrolled > coords) {
       setIsVisible(true);
-    } else {
+    }
+    if (scrolled < coords) {
       setIsVisible(false);
     }
-  };
+  }
+
+  function backToTop() {
+    console.log('backToTop: ');
+    if (typeof window !== undefined) {
+      if (window.pageYOffset > 0) {
+        // window.scrollBy(0, -80);
+        // setTimeout(backToTop, 0);
+        document.body.scrollTop = 0; // Для Safari
+        document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+      }
+    }
+  }
 
   useEffect(() => {
-    if (typeof window !== undefined && typeof document !== undefined) {
+    if (typeof window !== undefined) {
       window.onscroll = function () {
-        scrollFunction();
+        trackScroll();
       };
     }
   }, []);
@@ -44,7 +76,8 @@ const Default: React.FC<Props> = ({ children }) => {
 
         {isVisible ? (
           <button
-            onClick={scrollToTop}
+            // onClick={scrollToTop}
+            onClick={backToTop}
             className={styles.ScrollToTop}
             title="Go to top"
           >
