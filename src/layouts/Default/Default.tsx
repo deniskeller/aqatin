@@ -20,8 +20,8 @@ const Default: React.FC<Props> = ({ children }) => {
 
   const scrollFunction = () => {
     if (
-      document.body.scrollTop > 700 ||
-      document.documentElement.scrollTop > 700
+      document.body.scrollTop > 600 ||
+      document.documentElement.scrollTop > 600
     ) {
       setIsVisible(true);
     } else {
