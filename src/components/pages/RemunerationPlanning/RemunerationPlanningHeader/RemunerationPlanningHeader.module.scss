@@ -19,22 +19,18 @@
   }
 
   &_Description {
-    max-width: em(458px);
+    max-width: em(460px);
     position: relative;
     @include ifmobile {
       margin-bottom: em(37px);
     }
 
     &_Icon {
-      position: absolute;
-      bottom: em(-5px);
-      width: em(30px);
-      height: em(30px);
-      @include ifmobile {
-        bottom: 0;
-        width: em(25px);
-        height: em(25px);
-      }
+      display: inline-block;
+      position: relative;
+      top: em(3px);
+      width: em(18px);
+      height: em(18px);
     }
   }
 
