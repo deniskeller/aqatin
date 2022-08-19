@@ -1,7 +1,6 @@
 .Li {
   line-height: 100%;
   list-style: none;
-  // min-width: em(60px);
   margin-left: em(80px);
   &:first-child {
     margin-left: 0;
@@ -26,14 +25,6 @@
   color: $black;
   text-transform: uppercase;
   position: relative;
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: em(-5px);
-    left: 0;
-    height: 1px;
-    background-color: $yellow;
-  }
 
   @include iftablet {
     font-size: em(14px);
@@ -46,16 +37,4 @@
 
 .Link:hover {
   color: $yellow !important;
-  &::after {
-    animation: bottomLine 0.5s linear forwards;
-  }
-}
-
-@keyframes bottomLine {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
 }

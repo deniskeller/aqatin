@@ -94,19 +94,8 @@
   background: 0 0;
   box-shadow: none;
   position: relative;
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: em(-5px);
-    left: 0;
-    height: 1px;
-    background-color: $yellow;
-  }
 
   &:hover {
-    &::after {
-      animation: bottomLine 0.5s linear forwards;
-    }
     .Title {
       color: $yellow;
     }
