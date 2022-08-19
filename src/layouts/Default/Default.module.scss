@@ -19,10 +19,11 @@
   outline: none;
   background-color: $yellow;
   cursor: pointer;
-  border-radius: em(10px);
+  border-radius: 50%;
   transform: rotateZ(-90deg);
   box-shadow: 0 em(2px) em(16px) rgba(255, 255, 35, 0.5);
   transition: box-shadow $speed;
+  scroll-behavior: smooth;
   &:hover {
     background: darken($yellow, 10%);
     box-shadow: 0 em(2px) em(16px) rgba(249, 255, 66, 0.507);
