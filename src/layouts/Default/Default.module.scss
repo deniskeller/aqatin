@@ -17,19 +17,19 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: $red;
+  background-color: $yellow;
   cursor: pointer;
   border-radius: em(10px);
   transform: rotateZ(-90deg);
-  box-shadow: 0 em(2px) em(16px) rgba(240, 15, 15, 0.5);
+  box-shadow: 0 em(2px) em(16px) rgba(255, 255, 35, 0.5);
   transition: box-shadow $speed;
   &:hover {
-    background: darken($red, 10%);
-    box-shadow: 0 em(2px) em(16px) rgba(240, 15, 15, 1);
+    background: darken($yellow, 10%);
+    box-shadow: 0 em(2px) em(16px) rgba(249, 255, 66, 0.507);
   }
 
   &:active {
-    background: darken($red, 20%);
+    background: darken($yellow, 20%);
     box-shadow: none;
   }
 
