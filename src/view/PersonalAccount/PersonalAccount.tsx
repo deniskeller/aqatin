@@ -1,12 +1,19 @@
-import { Capabilities, PersonalAccountHeader } from 'components/pages/PersonalAccount';
+import {
+  Capabilities,
+  PersonalAccountHeader,
+} from 'components/pages/PersonalAccount';
 import React from 'react';
 
 const PersonalAccount = () => {
   return (
-    <>
-      <PersonalAccountHeader />
-      <Capabilities />
-    </>
+    <div className="Ul_Wrapper">
+      <div className="Li_Wrapper">
+        <PersonalAccountHeader />
+      </div>
+      <div className="Li_Wrapper">
+        <Capabilities />
+      </div>
+    </div>
   );
 };
 

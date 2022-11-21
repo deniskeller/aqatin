@@ -8,6 +8,8 @@ const Capabilities = () => {
     <>
       <div className={styles.Wrapper}>
         <BaseContainer>
+          {/* <div className="kek"></div> */}
+
           <div className={styles.Capabilities}>
             <div className={styles.Capabilities_Items}>
               <AnimationOnScroll
